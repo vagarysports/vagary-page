@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import { Carousel } from "@/components/Carousel"
+import { HomeCard } from "@/components/HomeCard"
+import { Testimonies } from "@/components/Testimonies"
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false)
@@ -24,20 +27,41 @@ export default function Home() {
 
       <section>
         <div className="w-full min-h-[100vh] bg-primary flex justify-center items-center">
-          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center py-20 px-32 w-full max-w-[800px] text-white bg-black text-xl font-bold leading-9 tracking-wider">
+          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center px-32 w-full max-w-[800px] text-white bg-black text-xl font-bold leading-9 tracking-wider">
             Vagary Sports Management is a company that specializes in organizing highly personalized soccer tours to Spain for clubs, academies, ODPs, colleges, and universities. With over 20 years of experience living, coaching, playing and representing Athletes in the country, the owners of Vagary Sports Management developed a wealth of knowledge  and personal contacts that they put at the service of clients.
           </div>
         </div>
       </section>
 
       <section>
-        <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-start px-24">
+        <div className="w-full bg-primary flex flex-col items-center justify-start px-24 pb-48">
           <h3 className="w-full text-center font-bold text-2xl text-white ">clubs we have worked with</h3>
-          <div className="w-full max-w-[2000px] mx-10 bg-black">
-            test
+          <Carousel />
+        </div>
+      </section>
+
+
+      <section>
+        <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-start px-24">
+          <div className="flex flex-col gap-10 items-center justify-start py-10">
+            <HomeCard title="About Us" backgroundImage="/images/about-card.png" />
+            <HomeCard title="Services" backgroundImage="/images/services-card.png" />
+            <HomeCard title="VGSM travel" backgroundImage="/images/vgsmtravel-card.png" />
+            <HomeCard title="Facilities" backgroundImage="/images/facilities-card.png" />
+            <HomeCard title="Partnership" backgroundImage="/images/partner-ship-card.png" />
+            <HomeCard title="Contact Us" backgroundImage="/images/contact-card.png" />
           </div>
         </div>
       </section>
+
+      <section>
+        <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-center px-24">
+          <h3 className="w-full text-center font-bold text-2xl text-white ">What our clients have to say</h3>
+          <Testimonies />
+        </div>
+      </section>
+
+
     </>
   )
 }
