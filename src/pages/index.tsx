@@ -28,7 +28,7 @@ export default function Home() {
 
       <section>
         <div className="w-full min-h-[100vh] bg-primary flex justify-center items-center">
-          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center px-32 py-20 w-full max-w-[800px] text-white bg-black text-xl font-bold leading-9 tracking-wider">
+          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center mx-4 px-2 xs:px-10 md:px-32 py-10 md:py-20 w-full max-w-[800px] text-white bg-black font-bold text-base leading-6 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
             Vagary Sports Management is a company that specializes in organizing highly personalized soccer tours to Spain for clubs, academies, ODPs, colleges, and universities. With over 20 years of experience living, coaching, playing and representing Athletes in the country, the owners of Vagary Sports Management developed a wealth of knowledge  and personal contacts that they put at the service of clients.
           </div>
         </div>
@@ -56,8 +56,8 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="w-full bg-primary flex flex-col items-center justify-start px-2 pb-48 pt-20">
-          <h3 className="w-full text-center font-bold text-2xl text-white mb-10">What Our Clients Have To Say</h3>
+        <div className="w-full bg-primary flex flex-col items-center justify-start px-2 pb-48 pt-40">
+          <h3 className="w-full text-center font-bold text-xl xs:text-2xl text-white mb-10">What Our Clients Have To Say</h3>
           <Testimonies />
         </div>
       </section>

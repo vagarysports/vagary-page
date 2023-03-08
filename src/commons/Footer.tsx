@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const ITEMS = [
   { path:'/', name:'home' },
@@ -39,11 +40,15 @@ export const Footer = () => {
         </div>
 
         <div className='flex flex-col items-center justify-center gap-7 text-white font-bold text-lg min-h-screen w-full bg-center bg-no-repeat bg-cover' style={{ backgroundImage:'url(/images/footer-2.png)' }}>
-          <Image src={'/logos/logo.png'} alt="" width={150} height={150} />
+          <Link href={'/'}>
+            <Image src={'/logos/logo.png'} alt="" width={150} height={150} />
+          </Link>
           {ITEMS.map(item=>(
-            <div key={item.path+'footer'}>
-              { item.name }
-            </div>
+            <Link key={item.path+'footer'} href={item.path}>
+              <div >
+                { item.name }
+              </div>
+            </Link>
           ))}
         </div>
 

@@ -23,7 +23,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed z-40 top-0 left-0 w-full border-gray-200 px-2 py-2.5 ">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between md:justify-start w-full">
 
             <Link href={'/'} className="block text-white rounded">
                 <Image src={'/logos/logo.png'} height={58} width={142} alt="Vagary" />
