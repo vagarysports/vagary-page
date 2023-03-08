@@ -45,12 +45,11 @@ export default function Home() {
       <section>
         <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-start px-24">
           <div className="flex flex-col gap-10 items-center justify-start py-10">
-            <HomeCard title="About Us" backgroundImage="/images/about-card.png" />
-            <HomeCard title="Services" backgroundImage="/images/services-card.png" />
-            <HomeCard title="VGSM travel" backgroundImage="/images/vgsmtravel-card.png" />
-            <HomeCard title="Facilities" backgroundImage="/images/facilities-card.png" />
-            <HomeCard title="Partnership" backgroundImage="/images/partner-ship-card.png" />
-            <HomeCard title="Contact Us" backgroundImage="/images/contact-card.png" />
+            <HomeCard path="/aboutUs" title="About Us" backgroundImage="/images/about-card.png" />
+            <HomeCard path="/facilities" title="Facilities" backgroundImage="/images/services-card.png" />
+            <HomeCard path="/partnersAndSponsors" title="Partners" backgroundImage="/images/vgsmtravel-card.png" />
+            <HomeCard path="/tourOptions" title="tour" backgroundImage="/images/facilities-card.png" />
+            <HomeCard path="/contact" title="Contact Us" backgroundImage="/images/contact-card.png" />
           </div>
         </div>
       </section>
