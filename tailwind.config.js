@@ -22,13 +22,18 @@ module.exports = {
     },
     extend: {
       animation: {
-        heroContent: 'heroContent 2s linear forwards 4s'
+        heroContent: 'heroContent 2s linear forwards 4s',
+        carouselAutoSlide: 'carouselAutoSlide 60s linear infinite',
       },
       keyframes:{
         heroContent: {
           '0%': { opacity:0 },
           '100%': { opacity:1 }
-        }
+        },
+        carouselAutoSlide: {
+          '0%': { left:"0%" },
+          '100%': { left: "-250%" }
+        },
       }
     },
   },

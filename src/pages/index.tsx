@@ -6,9 +6,10 @@ import { Testimonies } from "@/components/Testimonies"
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false)
+  
 
   useEffect(()=>{
-
+    
   },[])
 
 
@@ -27,15 +28,15 @@ export default function Home() {
 
       <section>
         <div className="w-full min-h-[100vh] bg-primary flex justify-center items-center">
-          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center px-32 w-full max-w-[800px] text-white bg-black text-xl font-bold leading-9 tracking-wider">
+          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center px-32 py-20 w-full max-w-[800px] text-white bg-black text-xl font-bold leading-9 tracking-wider">
             Vagary Sports Management is a company that specializes in organizing highly personalized soccer tours to Spain for clubs, academies, ODPs, colleges, and universities. With over 20 years of experience living, coaching, playing and representing Athletes in the country, the owners of Vagary Sports Management developed a wealth of knowledge  and personal contacts that they put at the service of clients.
           </div>
         </div>
       </section>
 
       <section>
-        <div className="w-full bg-primary flex flex-col items-center justify-start px-24 pb-48">
-          <h3 className="w-full text-center font-bold text-2xl text-white ">clubs we have worked with</h3>
+        <div className="w-full bg-primary flex flex-col items-center justify-start px-2 pb-48 pt-20">
+          <h3 className="w-full text-center font-bold text-2xl text-white mb-10">clubs we have worked with</h3>
           <Carousel />
         </div>
       </section>
