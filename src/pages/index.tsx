@@ -56,8 +56,8 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-center px-24">
-          <h3 className="w-full text-center font-bold text-2xl text-white ">What our clients have to say</h3>
+        <div className="w-full bg-primary flex flex-col items-center justify-start px-2 pb-48 pt-20">
+          <h3 className="w-full text-center font-bold text-2xl text-white mb-10">What Our Clients Have To Say</h3>
           <Testimonies />
         </div>
       </section>
