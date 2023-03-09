@@ -5,7 +5,7 @@ import styles from '@/styles/contact.module.css'
 
 const Contact = () => {
   return (
-    <div className='flex flex-col md:flex-row min-h-screen pt-24 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/contact-bg.png)' }}>
+    <div className='flex flex-col md:flex-row min-h-screen pt-24 bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/contact-bg.png)' }}>
       <div className='px-5 flex justify-center w-full md:block md:w-auto'>
         <Image src={'/logos/logo-nobg-black.png'} alt="" width={150} height={150} />
       </div>
