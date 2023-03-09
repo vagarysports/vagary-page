@@ -32,8 +32,8 @@ const AboutUs = () => {
 
       <div className='flex flex-col md:flex-row justify-center items-center py-20'>
           <div className='flex-1 '>
-            <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px]'>
-              <Image alt="" src="/images/vagary-beginnings.png" fill style={{ objectFit:'contain' }}/>
+            <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/vagary-beginnings.png)' }}>
+              {/* <Image alt="" src="/images/vagary-beginnings.png" fill style={{ objectFit:'contain' }}/> */}
             </div>
           </div>
           <div className='flex-1 p-5 md:p-10 md:px-10'>
