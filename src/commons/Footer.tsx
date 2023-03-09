@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import PhoneInput from 'react-phone-number-input'
 
 const ITEMS = [
   { path:'/', name:'home' },
@@ -29,9 +30,13 @@ export const Footer = () => {
                 <input type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
               </div>
               <div className='flex flex-col mb-12'>
+                <label htmlFor="" className='text-lg text-white font-bold '>Phone Number</label>
+                <input type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
+              </div>
+              {/* <div className='flex flex-col mb-12'>
                 <label htmlFor="" className='text-lg text-white font-bold'>Message</label>
                 <textarea className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} ></textarea>
-              </div>
+              </div> */}
             </form>
             <div className='flex w-full justify-end'>
               <button className='px-14 py-1 rounded-lg border-white border-2 outline-none text-white font-bold text-xl'>Send</button>
