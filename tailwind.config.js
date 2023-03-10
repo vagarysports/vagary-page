@@ -19,12 +19,15 @@ module.exports = {
     },
     screens: {
       'xs': '370px',
+      'map-screen': '540px',
       ...defaultTheme.screens,
     },
     extend: {
       animation: {
         heroContent: 'heroContent 2s linear forwards 4s',
         carouselAutoSlide: 'carouselAutoSlide 60s linear infinite',
+        scaleY: 'scaleY 1s linear forwards',
+        fadeIn: 'fadeIn 1s linear forwards',
       },
       keyframes:{
         heroContent: {
@@ -35,7 +38,19 @@ module.exports = {
           '0%': { left:"0%" },
           '100%': { left: "-250%" }
         },
-      }
+        scaleY: {
+          '0%': { transform: 'scaleY(0)', opacity:0 },
+          '100%': { transform: 'scaleY(1)', opacity:1 },
+        },
+        scaleYRotateToRight: {
+          '0%': { transform: 'scaleY(0) rotate(-90deg)', opacity:0 },
+          '100%': { transform: 'scaleY(1) rotate(0deg)', opacity:1 },
+        },
+        fadeIn: {
+          '0%': { opacity:0 },
+          '100%': { opacity:1 },
+        },
+      },
     },
   },
   plugins: [],

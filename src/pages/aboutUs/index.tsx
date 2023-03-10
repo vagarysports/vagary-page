@@ -4,30 +4,19 @@ import Image from 'next/image'
 const AboutUs = () => {
   return (
     <>
-      <div className='relative w-full bg-center bg-cover bg-no-repeat py-20 md:py-56 bg-fixed' style={{ backgroundImage:'url(/images/aboutUsHeader.jpeg)' }}>
-        <div className="absolute top-0 left-0 bottom-0 right-0 bg-black bg-opacity-70"></div>
-        
-        <div className='absolute top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
-          <div className='w-[150px] md:w-[200px] relative min-h-[300px]'>
+      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/aboutUsHeader.jpeg)' }}>
+      
+        <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
+          <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
             <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
           </div>
-          <div className='w-[5px] h-[300px] bg-white hidden md:block'></div>
-          <div>
-            <h2 className='text-white text-3xl font-bold text-center md:text-left mb-3'>About Us</h2>
-            <p className='italic text-sm md:text-base max-w-[500px] text-white text-justify tracking-wider px-3'>Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.</p>
-          </div>
-        </div>
-
-        <div className='opacity-0 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
-          <div className='w-[150px] md:w-[200px] relative min-h-[300px]'>
-            <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
-          </div>
-          <div className='w-[5px] h-[300px] bg-white hidden md:block'></div>
-          <div>
+          <div className='w-[1px] h-[300px] bg-white hidden md:block animate-[scaleY_.5s_ease_forwards] origin-center'></div>
+          <div className='animate-[scaleY_.5s_ease_forwards_.5s] opacity-0 origin-top'>
             <h2 className='text-white text-3xl font-bold text-center md:text-left mb-3'>About Us</h2>
             <p className='tracking-wide max-w-[500px] text-white text-justify px-3'>Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.</p>
           </div>
         </div>
+
       </div>
 
       <div className='flex flex-col md:flex-row justify-center items-center py-20'>
@@ -43,13 +32,13 @@ const AboutUs = () => {
       </div>
 
       <div className='bg-[#141618] py-10 px-5 sm:px-10'>
-        <h2 className='text-5xl sm:text-8xl text-white font-bold text-center sm:text-left'>Meet The <br/>Founders</h2>
+        <h2 className='text-5xl sm:text-7xl text-white font-bold text-center'>Meet The <br/>Founders</h2>
       </div>
 
       <div className='bg-[#141618] flex flex-col md:flex-row-reverse justify-center items-center py-20 lg:px-20'>
           <div className='flex-1 '>
             <div className='w-full relative min-h-[500px] min-w-[300px]'>
-              <Image alt="" src="/images/mike.jpg" fill style={{ objectFit:'contain' }}/>
+              <Image alt="" src="/images/mike.jpg" fill style={{ objectFit:'cover', objectPosition:'top center' }}/>
             </div>
           </div>
           <div className='flex-1 p-5 md:p-10 '>
@@ -63,7 +52,7 @@ const AboutUs = () => {
       <div className='bg-[#141618] flex flex-col md:flex-row justify-center items-center py-20 pb-72  lg:px-20 '>
           <div className='flex-1 '>
             <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px]'>
-              <Image alt="" src="/images/daniel.jpg" fill style={{ objectFit:'contain' }}/>
+              <Image alt="" src="/images/daniel.jpg" fill style={{ objectFit:'cover', objectPosition:'top center' }}/>
             </div>
           </div>
           <div className='flex-1 p-5 md:p-10'>

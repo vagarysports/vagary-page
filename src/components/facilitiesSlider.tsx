@@ -4,7 +4,23 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 
-export const Testimonies = () => {
+const images = [
+  { path:'/images/facilities/field1.png' },
+  { path:'/images/facilities/field2.png' },
+  { path:'/images/facilities/field3.jpeg' },
+  { path:'/images/facilities/field4.jpeg' },
+  { path:'/images/facilities/fieldabove.png' },
+  { path:'/images/facilities/fields.jpg' },
+  { path:'/images/facilities/food1.jpeg' },
+  { path:'/images/facilities/food2.jpeg' },
+  { path:'/images/facilities/food3.jpeg' },
+  { path:'/images/facilities/food4.jpeg' },
+  { path:'/images/facilities/terasse.jpeg' },
+  { path:'/images/facilities/terasse2.jpeg' },
+  { path:'/images/facilities/terasse3.jpeg' },
+]
+
+export const FacilitiesSlider = () => {
   const [cellWidth, setCellWidth] = useState(0)
   
   useEffect(()=>{
@@ -38,6 +54,8 @@ export const Testimonies = () => {
     <div className='w-[90%]'>
 
             <Carousel
+              swipeable
+              infiniteLoop
               selectedItem={0}
               centerMode
               centerSlidePercentage={cellWidth}
@@ -46,16 +64,8 @@ export const Testimonies = () => {
               showIndicators={false}
               showStatus={false}
             >
-              {[1,2,3,4,5,6,7].map(testimony=>(
-                  <div key={testimony+'testimonies'} className='w-full flex justify-center'>
-                  <div className='w-full max-w-[350px] flex items-center'>
-                    <Image src={'/images/testimony.png'} alt="" width={150} height={150} />
-                    <div>
-                      <h2 className='text-[#B1890F] text-left font-bold text-xl italic mb-4'>Player Name</h2>
-                      <p className='text-[#A4A4A4] text-left italic text-xs sm:text-sm'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation”</p>
-                    </div>
-                  </div>
-                </div>
+              {images.map(image=>(
+                  <div key={image.path+'image-carousel'} className='w-full h-[250px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:`url(${image.path})` }}></div>
               ))}
             </Carousel>
 

@@ -22,7 +22,7 @@ export const Navbar = () => {
     }
 
   return (
-    <nav className="fixed z-40 top-0 left-0 w-full border-gray-200 px-2 py-2.5 ">
+    <nav className="fixed z-40 top-0 left-0 w-full border-gray-200 px-2 py-2.5 bg-black ">
         <div className="flex items-center justify-between md:justify-start w-full">
 
             <Link href={'/'} className="block text-white rounded">
@@ -55,11 +55,11 @@ export const Navbar = () => {
                 </ul>
             </div>
 
-            <div className="hidden w-full md:block md:w-auto ml-10" id="navbar-default">
+            <div className="hidden w-full md:block md:w-auto ml-10 " id="navbar-default">
                 <ul className="flex flex-col p-4 mt-4  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     {ITEMS.map(item=>(
                         <li key={"desktopmenu"+item.path}>
-                            <Link href={item.path} className="block text-white rounded relative">
+                            <Link href={item.path} className="text-xl block text-white rounded relative">
                                 <span className="inline-block relative">
                                     { item.name }
                                     <div className={`${pathname===item.path?'scale-x-1':'scale-x-0'} absolute top-[120%] origin-left transition-all w-full h-[1px] bg-white`}></div>

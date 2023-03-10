@@ -18,8 +18,8 @@ export const Footer = () => {
 
         <div className='flex justify-center items-center min-h-screen w-full bg-center bg-no-repeat bg-cover' style={{ backgroundImage:'url(/images/footer-1.png)' }}>
           <div className='w-[80%] px-2'>
-            <h2 className='text-4xl text-white font-bold mb-14'>Contact Us</h2>
-            <p className='text-white text-xl font-medium max-w-[500px] mb-14'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <h2 className='text-4xl text-white font-bold mb-14 py-5 text-center lg:text-left'>Contact Us</h2>
+            <p className='text-white text-xl font-medium lg:max-w-[500px] mb-14 text-center lg:text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             <form action="" className=''>
               <div className='flex flex-col mb-12'>
                 <label htmlFor="" className='text-lg text-white font-bold '>Name</label>
@@ -38,7 +38,7 @@ export const Footer = () => {
                 <textarea className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} ></textarea>
               </div> */}
             </form>
-            <div className='flex w-full justify-end'>
+            <div className='flex w-full justify-center lg:justify-end'>
               <button className='px-14 py-1 rounded-lg border-white border-2 outline-none text-white font-bold text-xl'>Send</button>
             </div>
           </div>
