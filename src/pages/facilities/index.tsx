@@ -2,21 +2,27 @@ import React from 'react'
 import Image from 'next/image'
 import { FacilitiesSlider } from '@/components/facilitiesSlider';
 import { CTA1 } from '@/components/CTAs/facilities/CTA1';
+import { useRouter } from 'next/router';
 
 const Facilities = () => {
+  const router = useRouter()
+
   return (
     <div className='pt-10'>
+
+      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/facilities/fieldabove.png)' }}>
       
-      <section className="bg-black min-h-[500px] w-full relative">
-          <div className="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <video className="absolute w-screen h-[500px] object-cover" id="background-video" autoPlay={true} loop muted >
-              <source src="/videos/video_shorted.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="p-3 bg-black bg-opacity-60 absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center sm:justify-start sm:items-end">
-            <h2 className='text-6xl sm:text-8xl font-bold text-white'>Facilities</h2>
-          </div>
-      </section>
+      <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
+        <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
+          <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
+        </div>
+        <div className='w-[1px] h-[300px] bg-white hidden md:block animate-[scaleY_.5s_ease_forwards] origin-center'></div>
+        <div className='animate-[scaleY_.5s_ease_forwards_.5s] opacity-0 origin-top'>
+          <h2 className='text-6xl sm:text-8xl font-bold text-white'>Facilities</h2>
+        </div>
+      </div>
+
+    </div>
 
 
         <div className='bg-gray-100 flex py-0 flex-col mx-auto my-20 lg:flex-row gap-10 sm:gap-0 w-[90%] rounded-3xl overflow-hidden shadow-gray-400 shadow-md'>

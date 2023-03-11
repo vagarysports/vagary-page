@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import { CTA1 } from '@/components/CTAs/partnership/CTA1'
 
 const PartnersAndSponsors = () => {
   return (
     <>
-      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/aboutUsHeader.jpeg)' }}>
+      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/vgsmtravel-card.png)' }}>
         <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
           <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
             <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
@@ -18,31 +19,23 @@ const PartnersAndSponsors = () => {
       </div>
 
 
-      <div className='bg-[#121618] px-5 md:px-20 py-5 md:py-32'>
+      <div className='bg-[#121618] bg-gradient-to-b from-[#3d4246] to-[#0c0f11] px-5 md:px-20 py-5 md:py-32'>
         <p className='text-white text-xl md:text-2xl italic text-justify'>In addition, the Ebora Formacion Sports City is the headquarters of the Campus Experience and the Social Sports Schools of the Real Madrid Foundation. The company is also in the process of building a new multipurpose building, a space with stands to accommodate the public attending competitions, and a new leisure space to complement the current cafeteria service.</p>
       </div>
 
-      <div className='flex flex-col md:flex-row justify-center items-center py-20 bg-[#121618]'>
-          <div className='flex-1 '>
-            <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[300px]'>
-              <Image alt="" src="/images/real-levante.png" fill style={{ objectFit:'contain' }}/>
+      <div className=' bg-center bg-fixed bg-no-repeat bg-cover' style={{ backgroundImage:'url(/images/footer-1.png)' }}>
+          <div className='bg-black bg-opacity-70 py-20 lg:py-56  w-full h-full flex flex-col md:flex-row justify-center items-center'>
+            <div className='flex-1 '>
+              <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[300px]'>
+                <Image alt="" src="/images/real-levante.png" fill style={{ objectFit:'contain' }}/>
+              </div>
             </div>
+            <div className='flex-1 p-5 md:p-10 md:px-10 '>
+              <p className='text-white text-xl md:text-2xl italic text-justify'>The partnership between Levante UD and Ebora Formacion, which was signed in 2021, aims to facilitate the transfer of the training and methodological identity of the Levante UD brand to Castilla - La Mancha, and specifically to the town of Cazalegas where the Sports City is located. Both entities will work together to promote the development of young footballers and coaches through opportunities, experiences, and training within Levante UD.</p>
+            </div>        
           </div>
-          <div className='flex-1 p-5 md:p-10 md:px-10'>
-            <p className='text-white text-xl md:text-2xl italic text-justify'>The partnership between Levante UD and Ebora Formacion, which was signed in 2021, aims to facilitate the transfer of the training and methodological identity of the Levante UD brand to Castilla - La Mancha, and specifically to the town of Cazalegas where the Sports City is located. Both entities will work together to promote the development of young footballers and coaches through opportunities, experiences, and training within Levante UD.</p>
-          </div>        
       </div>
 
-      <div className='flex flex-col md:flex-row-reverse justify-center items-center py-20 bg-[#121618]'>
-          <div className='flex-1 '>
-            <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[300px]'>
-              <Image alt="" src="/images/cazalegas.png" fill style={{ objectFit:'contain' }}/>
-            </div>
-          </div>
-          <div className='flex-1 p-5 md:p-10 md:px-10'>
-            <p className='text-white text-xl md:text-2xl italic text-justify'>In addition to its partnerships with major soccer organizations, Vagary Sports Management has also formed an alliance with the Club Deportivo Cazalegas and Ebora Formacion. This partnership, announced in 2020, is committed to building a professional and enthusiastic project that aims to be different from the rest. All parties involved in the partnership emphasized the importance of taking this project seriously and working towards goals. </p>
-          </div>        
-      </div>
 
       <div className='w-full flex justify-center'>
         <div className='flex flex-col md:flex-row-reverse justify-center items-center shadow-sm shadow-gray-400 my-20 overflow-hidden rounded-3xl  w-[90%]'>
@@ -60,6 +53,25 @@ const PartnersAndSponsors = () => {
             </div>        
         </div>
       </div>
+
+
+      <div className=' bg-center  bg-fixed bg-no-repeat bg-cover' style={{ backgroundImage:'url(/images/footer-2.png)' }}>
+          <div className='py-20 lg:py-56 w-full h-full bg-black bg-opacity-70 flex flex-col md:flex-row-reverse justify-center items-center'>
+            <div className='flex-1 '>
+              <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[300px]'>
+                <Image alt="" src="/images/cazalegas.png" fill style={{ objectFit:'contain' }}/>
+              </div>
+            </div>
+            <div className='flex-1 p-5 md:p-10 md:px-10 '>
+              <p className='text-white text-xl md:text-2xl italic text-justify'>In addition to its partnerships with major soccer organizations, Vagary Sports Management has also formed an alliance with the Club Deportivo Cazalegas and Ebora Formacion. This partnership, announced in 2020, is committed to building a professional and enthusiastic project that aims to be different from the rest. All parties involved in the partnership emphasized the importance of taking this project seriously and working towards goals. </p>
+            </div>        
+          </div>
+      </div>
+
+      <div className='py-20'>
+        <CTA1 />
+      </div>
+
     </>
   )
 }
