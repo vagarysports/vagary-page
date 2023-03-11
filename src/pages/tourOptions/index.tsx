@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { ServicesSection } from '@/components/ServicesSection'
 
 const FEATURES = [
   {
@@ -88,9 +89,9 @@ const TourOptions = () => {
       </div>
 
 
-      <h2 className='text-3xl font-bold text-center' id='services'>SERVICES</h2>
+      <h2 id='services'></h2>
       <div className='flex justify-center items-center min-h-[500px] w-full'>
-        / services description here /
+        <ServicesSection />
       </div>
 
     </div>
