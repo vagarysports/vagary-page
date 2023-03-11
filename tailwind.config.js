@@ -15,7 +15,8 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      primary: "#141618"
+      primary: "#141618",
+      secondary: '#FFBC00'
     },
     screens: {
       'xs': '370px',

@@ -1,10 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import { CTA1 } from '@/components/CTAs/aboutUs/CTA1'
+import { CTA2 } from '@/components/CTAs/aboutUs/CTA2'
+
 
 const AboutUs = () => {
   return (
     <>
-      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/aboutUsHeader.jpeg)' }}>
+      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/about-card.png)' }}>
       
         <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
           <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
@@ -30,6 +33,8 @@ const AboutUs = () => {
             <p className='text-justify text-base lg:text-xl text-[#888888] '>We also have a global presence with projects in Argentina, Spain, USA and Germany. We work closely with JJ Sport Management where we acquired extensive experience assisting high value LaLiga-Premier League transfers. We have actively collaborated with JJ Sport Management in recent years advising on sports, marketing, sponsorship of their athletes based in the main European Soccer Leagues.</p>
           </div>        
       </div>
+
+      <CTA1 />
 
       <div className='bg-[#141618] py-10 px-5 sm:px-10'>
         <h2 className='text-5xl sm:text-7xl text-white font-bold text-center'>Meet The <br/>Founders</h2>
@@ -63,11 +68,12 @@ const AboutUs = () => {
           </div>        
       </div>
 
+      <CTA2 />
      
-
-
     </>
   )
 }
 
 export default AboutUs
+
+
