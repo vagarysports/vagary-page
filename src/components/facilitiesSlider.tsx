@@ -60,12 +60,11 @@ export const FacilitiesSlider = () => {
               centerMode
               centerSlidePercentage={cellWidth}
               showThumbs={false}
-              autoPlay
               showIndicators={false}
               showStatus={false}
             >
               {images.map(image=>(
-                  <div key={image.path+'image-carousel'} className='w-full h-[250px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:`url(${image.path})` }}></div>
+                  <div key={image.path+'image-carousel'} className='w-full h-[400px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:`url(${image.path})` }}></div>
               ))}
             </Carousel>
 
