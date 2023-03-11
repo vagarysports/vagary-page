@@ -1,4 +1,4 @@
-import React, { LegacyRef, useState } from 'react'
+import React, { LegacyRef, useState, useRef, SyntheticEvent } from 'react'
 //@ts-ignore
 import Datepicker from "react-tailwindcss-datepicker";
 import { TextInput } from './form/TextInput'
@@ -16,9 +16,33 @@ const ContactForm = () => {
     const [startDate, setStartDate] = useState('')
     const [endDate, setEndDate] = useState('')
 
+    const handleSubmit = (e:SyntheticEvent) => {
+        e.preventDefault()
+        const data = {
+            firstName: firstName,
+            lastName,
+            email,
+            team,
+            level,
+            phone,
+            startDate,
+            endDate
+        }
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          })
+          .then(data=>data.json())
+          .then(data=>console.log(data))
+    }
+
     return (
     <div className='flex justify-center'> 
-            <form action="" className='w-[90%] px-2 md:px-10 py-20 mb-20 rounded-3xl transition-all  h-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100' >
+            <form onSubmit={handleSubmit} className='w-[90%] px-2 md:px-10 py-20 mb-20 rounded-3xl transition-all  h-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100' >
                 <div className=' flex w-full gap-5 flex-col sm:flex-row'> 
                     <TextInput value={firstName} changeHandler={(value)=>setFirstName(value)} isValid={firstName.length>0} placeHolder='Lirst Name' isRequired={true}  />
                     <TextInput value={lastName} changeHandler={(value)=>setLastName(value)} isValid={lastName.length>0} placeHolder='Last Name' isRequired={true}  />
@@ -60,7 +84,10 @@ const ContactForm = () => {
 
                 <div className='flex w-full justify-center'>
                     <button 
-                        className='py-3 px-20 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 hover:bg-opacity-30 hover:scale-95 transition-all border border-gray-100 text-white font-bold text-2xl'>Send</button>
+                        type='submit'
+                        className='py-3 px-20 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 hover:bg-opacity-30 hover:scale-95 transition-all border border-gray-100 text-white font-bold text-2xl'>
+                            Send
+                        </button>
                 </div>
               
             </form>        
