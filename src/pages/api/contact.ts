@@ -1,20 +1,63 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
+import nodemailer from 'nodemailer'
+import { google } from 'googleapis'
+import axios from 'axios'
 
 
-type Data = {
-    firstName: 'test',
-    lastName: 'fks',
-    email: 'jorgezerpaº',
-    team: 'rffgº',
-    level: 'jhiigug',
-    phone: '+584126436269',
-    startDate: { startDate: '2023-03-22', endDate: '2023-03-22' },
-    endDate: { startDate: '2023-03-13', endDate: '2023-03-13' }
+
+const creds = {
+    "service":"gmail",
+    "auth": {
+        type:process.env.GMAIL_API_TYPE,
+        user:process.env.GMAIL_API_USER,
+        clientId:process.env.GMAIL_API_CLIENT_ID,
+        clientSecret:process.env.GMAIL_API_CLIENT_SECRET,
+        refreshToken:process.env.GMAIL_API_REFRESH_TOKEN
+    }
   }
+  
+ 
 
-export default function handler( req: NextApiRequest, res: NextApiResponse<any>) {
-    console.log(req.body)
+//   ----------------------------------
+  //CREATE NEW OAUTH CLIENT
+const oAuth2Client = new google.auth.OAuth2(
+    creds.auth.clientId, //client id
+    creds.auth.clientSecret, //client secret
+    process.env.GMAIL_API_REDIRECT_URI, //redirect uri
+  );
 
-  res.status(200).json({ status: 'success' })
-}
+oAuth2Client.setCredentials({ refresh_token: creds.auth.refreshToken });
+
+
+
+
+
+export default async function handler(req: NextApiRequest,res: NextApiResponse<any>) {
+    try {
+        const accessToken = await oAuth2Client.getAccessToken();
+        const transport = nodemailer.createTransport({
+            service:"gmail",
+            auth: {
+                "type":"OAuth2",
+                "user": creds.auth.user,
+                "clientId":creds.auth.clientId,
+                "clientSecret":creds.auth.clientSecret,
+                "refreshToken":creds.auth.refreshToken
+            }
+        })
+
+        const mailOptions = {
+          from: "Vagary Sports <sid.cd.varma@gmail.com>",
+          to: "jorgezerpacoder@gmail.com",
+          subject: "Gmail API NodeJS",
+          html:`<div>${req.body.email}</div>`
+        };
+  
+        const result = await transport.sendMail(mailOptions);
+        res.send(result);
+    } catch (error) {
+      console.log(error);
+      res.send(error);
+    }
+  }
