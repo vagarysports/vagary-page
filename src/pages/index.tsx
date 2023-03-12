@@ -28,8 +28,15 @@ export default function Home() {
 
       <section>
         <div className="w-full min-h-[100vh] bg-primary flex justify-center items-center">
-          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center mx-4 px-2 xs:px-10 md:px-32 py-10 md:py-20 w-full max-w-[800px] text-white bg-black font-bold text-base leading-6 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
+          {/* <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center mx-4 px-2 xs:px-10 md:px-32 py-10 md:py-20 w-full max-w-[800px] text-white bg-black font-bold text-base leading-6 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
             Vagary Sports Management is a company that specializes in organizing highly personalized soccer tours to Spain for clubs, academies, ODPs, colleges, and universities. With over 20 years of experience living, coaching, playing and representing Athletes in the country, the owners of Vagary Sports Management developed a wealth of knowledge  and personal contacts that they put at the service of clients.
+          </div> */}
+          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-left xs:text-center mx-4 px-2 xs:px-10 md:px-28 py-10 md:py-32 w-full max-w-[800px] text-white bg-black font-bold text-base leading-7 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
+              <p className="mb-7 md:mb-0">We specialize in maximizing your experience.</p>
+              <p className="mb-7 md:mb-0">Professionalism in everything we do.</p>            
+              <p className="mb-7 md:mb-0">Your plans are at the center of our service.</p>            
+              <p className="mb-7 md:mb-0">Our network, our facilities, your customization. </p>            
+              <p className="mb-7 md:mb-0">We provide the framework. You design your trip.</p>            
           </div>
         </div>
       </section>
@@ -45,11 +52,11 @@ export default function Home() {
       <section>
         <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-start px-24">
           <div className="flex flex-col gap-10 items-center justify-start py-10">
-            <HomeCard path="/aboutUs" title="About Us" backgroundImage="/images/about-card.png" />
+            <HomeCard path="/services" title="Services" backgroundImage="/images/services-card.jpg" />
+            <HomeCard path="/VGSM-TRAVEL" title="VGSM-TRAVEL" backgroundImage="/images/VGSMTRAVEL-card.png" />
             <HomeCard path="/facilities" title="Facilities" backgroundImage="/images/facilities/fieldabove.png" />
             <HomeCard path="/partnersAndSponsors" title="Partners" backgroundImage="/images/partners-card.png" />
-            <HomeCard path="/VGSM-TRAVEL" title="VGSM-TRAVEL" backgroundImage="/images/VGSMTRAVEL-card.png" />
-            <HomeCard path="/services" title="Services" backgroundImage="/images/services-card.jpg" />
+            <HomeCard path="/aboutUs" title="About Us" backgroundImage="/images/about-card.png" />
             <HomeCard path="/contact" title="Contact Us" backgroundImage="/images/contact-card.png" />
           </div>
         </div>

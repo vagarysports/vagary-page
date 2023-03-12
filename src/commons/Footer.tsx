@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 const ITEMS = [
   { path:'/', name:'home' },
-  { path:'/aboutUs', name:'about us' },
+  { path:'/services', name:'services' },
+  { path:'/VGSM-TRAVEL', name:'VGSM TRAVEL' },
   { path:'/facilities', name:'facilities' },
   { path:'/partnersAndSponsors', name:'partners' },
-  { path:'/VGSM-TRAVEL', name:'VGSM TRAVEL' },
-  { path:'/services', name:'services' },
+  { path:'/aboutUs', name:'about us' },
   { path:'/contact', name:'contact' },
 ]
 
