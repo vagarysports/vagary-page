@@ -21,8 +21,8 @@ const SERVICES = [
 export const ServicesSection = () => {
   return (
     <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
-    <div className="container mx-auto">
-        <div className="-mx-4 flex flex-wrap">
+    <div className="mx-auto">
+        <div className=" flex flex-wrap">
         <div className="w-full px-4">
             <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
             <span className="text-primary mb-2 block text-lg font-semibold">
@@ -40,7 +40,7 @@ export const ServicesSection = () => {
             </div>
         </div>
         </div>
-        <div className="-mx-4 flex flex-wrap">
+        <div className="flex flex-wrap">
             {SERVICES.map(item=>(
                 <div className="w-full px-4 md:w-1/2 lg:w-1/3" key={item.title+'servicesCards'}>
                 <div
