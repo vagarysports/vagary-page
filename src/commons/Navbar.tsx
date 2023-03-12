@@ -9,7 +9,7 @@ const ITEMS = [
     { path:'/aboutUs', name:'about us' },
     { path:'/facilities', name:'facilities' },
     { path:'/partnersAndSponsors', name:'partners' },
-    { path:'/tourOptions', name:'tour' },
+    { path:'/VGSM-TRAVEL', name:'VGSM TRAVEL' },
     { path:'/contact', name:'contact' },
 ]
 

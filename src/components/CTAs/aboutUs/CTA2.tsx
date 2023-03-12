@@ -18,9 +18,9 @@ export const CTA2 = () => {
           <span className="text-primary">to increase your Level?</span>
         </h2>
         <p className='mb-10 text-2xl tracking-tight leading-tight'>look what we can offer you</p>
-        <p onClick={()=>router.push('/tourOptions')} className="inline-block px-7 py-3 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out mb-2 md:mr-2"
+        <p onClick={()=>router.push('/VGSM-TRAVEL')} className="inline-block px-7 py-3 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out mb-2 md:mr-2"
            role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">Tour Options</p>
-        <p onClick={()=>router.push('/tourOptions#services')} className="inline-block px-7 py-3 bg-transparent text-primary font-medium text-sm leading-snug uppercase rounded  focus:outline-none focus:ring-0  transition duration-150 ease-in-out mb-2"
+        <p onClick={()=>router.push('/services')} className="inline-block px-7 py-3 bg-transparent text-primary font-medium text-sm leading-snug uppercase rounded  focus:outline-none focus:ring-0  transition duration-150 ease-in-out mb-2"
             role="button">Services</p>
       </div>
 

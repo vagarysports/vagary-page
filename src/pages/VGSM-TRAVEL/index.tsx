@@ -21,7 +21,7 @@ const FEATURES = [
   },
 ]
 
-const TourOptions = () => {
+const VGSMTRAVEL = () => {
   const router = useRouter()
 
   return (
@@ -34,7 +34,7 @@ const TourOptions = () => {
         </div>
         <div className='w-[1px] h-[300px] bg-white hidden md:block animate-[scaleY_.5s_ease_forwards] origin-center'></div>
         <div className='animate-[scaleY_.5s_ease_forwards_.5s] opacity-0 origin-top'>
-          <h2 className='text-6xl sm:text-8xl font-bold text-white'>Tour and Services</h2>
+          <h2 className='text-6xl sm:text-8xl font-bold text-white'>VGSM-TRAVEL</h2>
         </div>
       </div>
     </div>
@@ -98,4 +98,4 @@ const TourOptions = () => {
   )
 }
 
-export default TourOptions
+export default VGSMTRAVEL

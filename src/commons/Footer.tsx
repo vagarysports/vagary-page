@@ -1,14 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import PhoneInput from 'react-phone-number-input'
 
 const ITEMS = [
   { path:'/', name:'home' },
   { path:'/aboutUs', name:'about us' },
   { path:'/facilities', name:'facilities' },
   { path:'/partnersAndSponsors', name:'partners' },
-  { path:'/tourOptions', name:'tour' },
+  { path:'/VGSM-TRAVEL', name:'VGSM TRAVEL' },
   { path:'/contact', name:'contact' },
 ]
 

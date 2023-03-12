@@ -48,7 +48,7 @@ export default function Home() {
             <HomeCard path="/aboutUs" title="About Us" backgroundImage="/images/about-card.png" />
             <HomeCard path="/facilities" title="Facilities" backgroundImage="/images/facilities/fieldabove.png" />
             <HomeCard path="/partnersAndSponsors" title="Partners" backgroundImage="/images/vgsmtravel-card.png" />
-            <HomeCard path="/tourOptions" title="tour" backgroundImage="/images/services-card.png" />
+            <HomeCard path="/VGSM-TRAVEL" title="VGSM-TRAVEL" backgroundImage="/images/services-card.png" />
             <HomeCard path="/contact" title="Contact Us" backgroundImage="/images/contact-card.png" />
           </div>
         </div>
