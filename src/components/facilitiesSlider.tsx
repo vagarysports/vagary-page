@@ -62,6 +62,7 @@ export const FacilitiesSlider = () => {
               showThumbs={false}
               showIndicators={false}
               showStatus={false}
+              autoPlay
             >
               {images.map(image=>(
                   <div key={image.path+'image-carousel'} className='w-full h-[400px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:`url(${image.path})` }}></div>

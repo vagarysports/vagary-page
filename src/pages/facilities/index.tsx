@@ -25,20 +25,19 @@ const Facilities = () => {
     </div>
 
 
-        <div className='bg-gray-100 flex py-0 flex-col mx-auto my-20 lg:flex-row gap-10 sm:gap-0 w-[90%] rounded-3xl overflow-hidden shadow-gray-400 shadow-md'>
-          <div className='w-full px-2 sm:px-5  flex justify-center items-center h-[500px] sm:min-h-0'>
-            <p className='text-center font-bold text-lg sm:text-2xl mb-10 max-w-[500px] tracking-wider leading-8'>In addition to organizing friendly matches with competitive rivals, Vagary Sports Management also has the exclusive privilege of offering the use of the new sports facilities at Ebora Formacion in Talavera de la Reina</p>
+        <div className='bg-gray-100 flex py-0 flex-col mx-auto my-20 lg:flex-row w-[95%] lg:w-[90%] rounded-3xl overflow-hidden shadow-gray-400 shadow-md'>
+          <div className='w-full px-2 sm:px-5  flex justify-center items-center py-10 md:py-20'>
+            <p className='text-center font-bold text-sm sm:text-xl  max-w-[500px]  tracking-wider leading-8'>Vagary Sports Management has the exclusive privilege through its collaboration with Ebora Formacion Deportiva, of offering the use of the new sports facilities at Ebora Formacion in Talavera de la Reina. Located just 70 miles from Madrid, these facilities, which were built in 2021, include a residence, restaurant, and two full-size soccer fields.</p>
           </div>
-          <div className='w-full flex flex-col min-h-[500px] gap-4 justify-center items-center px-4 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/facilities/field2.png)' }}>
+          <div className='w-full flex flex-col min-h-[400px] md:min-h-[500px] gap-4 justify-center items-center px-4 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/facilities/field2.png)' }}>
             
           </div>
         </div>
 
         <div className='flex w-full py-0 flex-col lg:flex-row-reverse gap-10 sm:gap-0'>
-          <div className='w-full px-5 pt-28 flex justify-center items-center lg:items-start flex-col'>
+          <div className='w-full px-5 py-14 flex justify-center items-center lg:items-start flex-col'>
             <div>
-              <p className='text-justify font-bold text-sm mb-10 max-w-[500px] tracking-wider leading-8'>Located just 70 miles from Madrid, these facilities, which were built in 2021, include a residence, restaurant, and two full-size soccer fields. The Sports City is built on a 42,500 square meter lot and includes two artificial grass fields, two tennis courts, multi-sports courts, a changing room, gym, and parking, among other amenities.</p>
-              <p className='text-justify font-bold text-sm mb-10 max-w-[500px] tracking-wider leading-8'>One of the key objectives of the Ebora Formacion facilities is to create a space that not only increases the educational, sports, and recreational offerings in the area, but also promotes the development of sports values as a catalyst center for sports activity. The Sports City has a range of spaces that can be used for a variety of different activities, including two 11-a-side soccer courts, four 7-a-side soccer courts, two basketball courts, changing rooms, four paddle tennis courts, two tennis courts, an indoor soccer court, and a swimming pool.</p>
+              <p className='text-justify font-bold text-sm mb-10 max-w-[500px] tracking-wider leading-8'> The Sports City is built on a 42,500 square meter lot and includes two artificial grass fields, two tennis courts, multi-sports courts, a changing room, gym, and parking, among other amenities. The Sports City has a range of spaces that can be used for a variety of different activities, including two 11-a-side soccer courts, four 7-a-side soccer courts, two basketball courts, changing rooms, four paddle tennis courts, two tennis courts, an indoor soccer court, and a swimming pool. Equipped with two 11-a-side soccer fields of the latest generation of artificial turf, with official and regulatory measures. Also our residence in Madrid, is divided into shared (2 persons) room with a shared bathroom. </p>
             </div>
           </div>
           <div className='w-full flex flex-col min-h-[400px] gap-4 justify-center items-center px-4 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/facilities/food2.jpeg)' }}>
