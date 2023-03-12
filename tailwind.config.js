@@ -22,6 +22,7 @@ module.exports = {
       'xs': '370px',
       'map-screen': '540px',
       ...defaultTheme.screens,
+      'lg':'1200px'
     },
     extend: {
       animation: {

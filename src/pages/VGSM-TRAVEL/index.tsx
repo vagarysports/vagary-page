@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { CTA1 } from '@/components/CTAs/VGSMTravel/CTA1'
 
 const FEATURES = [
   {
@@ -27,65 +28,35 @@ const VGSMTRAVEL = () => {
     <div>
 
     <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/VGSMTRAVEL-card.png)' }}>
-      <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
-        <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
+      <div className='rotate-0 bg-black py-36 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
+        <div className='w-[150px] md:w-[200px] relative min-h-[200px] md:min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
           <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
         </div>
         <div className='w-[1px] h-[300px] bg-white hidden md:block animate-[scaleY_.5s_ease_forwards] origin-center'></div>
         <div className='animate-[scaleY_.5s_ease_forwards_.5s] opacity-0 origin-top'>
-          <h2 className='text-6xl sm:text-8xl font-bold text-white'>VGSM-TRAVEL</h2>
+          <h2 className='text-center md:text-left text-4xl md:text-5xl lg:text-6xl font-bold text-white'>VGSM-TRAVEL</h2>
         </div>
       </div>
     </div>
 
-    <div className='p-10 sm:p-36'>
-      <p className='text-justify mb-10 text-lg md:text-2xl text-gray-800'>Vagary´s main objective is to ensure that the teams have all possible tools at hand and the highest possible level of competition in preparation for the season.</p>
-      <p className='text-justify mb-10 text-lg md:text-2xl text-gray-800'>Vagary has a network of contacts in the city of Madrid that includes La Liga academies, local professional teams (2,3 and 4 tier in Spain) and a high selection of tournaments during the course of the year for grassroots soccer academies.</p>
+    <div className='p-10 py-24 sm:py-36 w-full md:w-[70%] mx-auto'>
+      <p className='text-center md:text-center font-bold md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-800'>Vagary has a network of contacts in the city of Madrid that includes La Liga academies, professional teams and a high selection of Youth tournaments during the course of the year.</p>
     </div>
 
 
-      <div className='flex w-full text-white  flex-col lg:flex-row bg-fixed bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/facilities/field1.png)' }}>
-        <div className='w-full flex  justify-center items-center p-5 py-20 bg-black bg-opacity-60'>
-          <div className='w-full max-w-[600px]'>
-            <p className='text-justify mb-10 text-lg md:text-2xl text-white'>The client will only have to take care of the travel insurance and the plane ticket. Vagary will take care of the client´s needs from the time they land at Barajas International Airport until they leave for the United States. Our prices include everything, lodging, meals, transportation, sports equipment, etc...</p>
-            <p className='text-justify mb-10 text-2xl md:text-3xl font-bold text-white'>We offer our services to youth soccer clubs, college teams and professional teams</p>
+      <div className='flex  text-black flex-col-reverse lg:flex-row w-[97%] lg:w-[90%] bg-gray-100 shadow-md shadow-gray-500 rounded-xl overflow-hidden mx-auto' >
+        <div className='w-full flex  justify-center items-center p-5 py-10 md:py-20 white'>
+          <div className='w-full max-w-[700px]'>
+            <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>The client will have complete freedom to organize the trip as desired. The coaches or managers of the trip can tell us what the objective is and Vagary will adapt around the client´s objective. In addition, we have additional services such as video analysis, technical talks with coaches of the First and Second Division, etc…</p>
+            <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>Vagary will take care of the client´s needs from the time they land at Barajas International Airport until they leave for the United States. Our prices include everything, lodging, meals, transportation, sports equipment, etc… The client will only have to take care of the travel insurance and the plane ticket.</p>
+            <p className='text-justify mb-10 text-xl md:text-2xl  font-bold '>We offer our services to youth soccer clubs, college teams and professional teams</p>
           </div>
         </div>
 
-        <div className='w-full flex flex-col gap-4 justify-center items-center px-4 py-20 bg-black bg-opacity-60'>
-          {FEATURES.map((feature, index)=>(
-          <div key={feature.title+index+'features'} className='max-w-[600px] min-h-[200px]  p-5 sm:p-5 border border-white rounded-3xl flex items-center flex-col sm:flex-row gap-3'>
-            <div className='shrink-0'>
-              { feature.icon }
-            </div>
-            <div className=''>
-              <h2 className='text-center sm:text-left text-2xl mb-5 font-bold'>{ feature.title }</h2>
-              <p className='text-center sm:text-left'>{feature.desc}</p>
-            </div>
-          </div>
-          ))}
-        </div>
+        <div className='w-full flex flex-col gap-4 h-[350px] lg:h-auto justify-center items-center px-4 py-20 bg-left bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/about-card.png)' }} ></div>
       </div>
-      
-      
-      <div className='flex w-full py-20 flex-col lg:flex-row'>
-        <div className='w-full flex justify-center items-center p-5'>
-          <div className='w-full max-w-[600px]'>
-            <h2 className='text-justify mb-10 text-2xl md:text-3xl font-bold text-black'>Facilities</h2>
-            <p className='text-justify mb-10 text-lg  text-gray-800'>In addition to organizing friendly matches with competitive rivals, Vagary Sports Management also has the exclusive privilege through its collaboration with Ebora Formacion Deportiva, of offering the use of the new sports facilities at Ebora Formacion in Talavera de la Reina.</p>
-            <p className='text-justify mb-10 text-lg  text-gray-800'>These facilities, which were built in 2021, include a residence, restaurant, and two full-size soccer fields.</p>
-            <p className='text-justify mb-10 text-lg  text-gray-800'>The Sports City is built on a 42,500 square meter lot and includes two artificial grass fields, two tennis courts, multi-sports courts, a changing room, gym, and parking, among other amenities.</p>
-            <button onClick={()=>router.push('/facilities')} className='border border-gray-700 w-full py-2 text-xl text-gray-700 rounded-2xl'>See installations</button>
-          </div>
-        </div>
 
-        <div className='w-full flex flex-col gap-4 justify-center items-center px-4'>
-          <div className='relative w-full h-[300px]'>
-            <Image src='/images/render.png' alt='' fill style={{ objectFit:'contain' }} />
-          </div>
-          <p className='text-justify font-bold max-w-[500px] mb-10 text-lg  text-gray-800'>Our facilities are located in Cazalegas, Toledo, Spain. It is located less than 60 miles from the center of Madrid.</p>
-        </div>
-      </div>
+      <CTA1 />
 
     </div>
   )
