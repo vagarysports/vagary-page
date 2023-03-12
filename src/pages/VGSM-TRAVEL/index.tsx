@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { ServicesSection } from '@/components/ServicesSection'
 
 const FEATURES = [
   {
@@ -27,7 +26,7 @@ const VGSMTRAVEL = () => {
   return (
     <div>
 
-    <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/services-card.png)' }}>
+    <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/VGSMTRAVEL-card.png)' }}>
       <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
         <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
           <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
@@ -86,12 +85,6 @@ const VGSMTRAVEL = () => {
           </div>
           <p className='text-justify font-bold max-w-[500px] mb-10 text-lg  text-gray-800'>Our facilities are located in Cazalegas, Toledo, Spain. It is located less than 60 miles from the center of Madrid.</p>
         </div>
-      </div>
-
-
-      <h2 id='services'></h2>
-      <div className='flex justify-center items-center min-h-[500px] w-full'>
-        <ServicesSection />
       </div>
 
     </div>
