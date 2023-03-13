@@ -1,4 +1,4 @@
-import React, { LegacyRef, useState, useRef, SyntheticEvent } from 'react'
+import React, { useState, SyntheticEvent } from 'react'
 //@ts-ignore
 import Datepicker from "react-tailwindcss-datepicker";
 import { TextInput } from './form/TextInput'
@@ -16,8 +16,31 @@ const ContactForm = () => {
     const [startDate, setStartDate] = useState('')
     const [endDate, setEndDate] = useState('')
 
+    const [isSending, setIsSending] = useState(false)
+    const [isSuccess, setIsSuccess] = useState(false)
+    const [isError, setIsError] = useState(false)
+
+    const handleIsSending = () => {
+        setIsSending(true)
+        setIsSuccess(false)
+        setIsError(false)
+    }
+
+    const handleIsSuccess = () => {
+        setIsSuccess(true)
+        setIsSending(false)
+        setIsError(false)
+    }
+
+    const handleIsError = () => {
+        setIsError(true)
+        setIsSuccess(false)
+        setIsSending(false)
+    }
+
     const handleSubmit = (e:SyntheticEvent) => {
         e.preventDefault()
+        handleIsSending()
         const data = {
             firstName: firstName,
             lastName,
@@ -37,7 +60,12 @@ const ContactForm = () => {
             body: JSON.stringify(data)
           })
           .then(data=>data.json())
-          .then(data=>console.log(data))
+          .then(data=>{
+            handleIsSuccess()
+          })
+          .catch(e => {
+            handleIsError()
+          })
     }
 
     return (
@@ -83,11 +111,16 @@ const ContactForm = () => {
                 </div>
 
                 <div className='flex w-full justify-center'>
-                    <button 
-                        type='submit'
-                        className='py-3 px-20 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 hover:bg-opacity-30 hover:scale-95 transition-all border border-gray-100 text-white font-bold text-2xl'>
-                            Send
+                    { !isSending && (
+                        <button 
+                            type='submit'
+                            className='py-3 px-20 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 hover:bg-opacity-30 hover:scale-95 transition-all border border-gray-100 text-white font-bold text-2xl'>
+                                Send
                         </button>
+                    )}
+                    {isSending && (
+                        <div>sending...</div>
+                    )}
                 </div>
               
             </form>        

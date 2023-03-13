@@ -18,6 +18,13 @@ const images = [
   { path:'/images/facilities/terasse.jpeg' },
   { path:'/images/facilities/terasse2.jpeg' },
   { path:'/images/facilities/terasse3.jpeg' },
+  { path:'/images/facilities/room1.jpeg' },
+  { path:'/images/facilities/room2.jpeg' },
+  { path:'/images/facilities/room3.jpeg' },
+  { path:'/images/facilities/room4.jpeg' },
+  { path:'/images/facilities/room5.jpeg' },
+  { path:'/images/facilities/room6.jpeg' },
+  { path:'/images/facilities/room7.jpeg' },
 ]
 
 export const FacilitiesSlider = () => {

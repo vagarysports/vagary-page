@@ -96,6 +96,17 @@ const Facilities = () => {
           </div>
         </div>
 
+        <div className='flex w-full py-0 flex-col lg:flex-row gap-10 sm:gap-0'>
+          <div className='w-full px-5 pt-28 flex justify-center flex-col items-center'>
+            <h3 className='font-bold text-xl mb-7'>Rooms</h3>
+            <iframe className='scale-75 sm:scale-75 md:scale-125' width={560*.7} height={315*.7} src="https://www.youtube.com/embed/AJkdxmU1hfc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
+          <div className='w-full px-5 pt-28 flex justify-center flex-col items-center'>
+            <h3 className='font-bold text-xl mb-7'>Residence</h3>
+            <iframe className='scale-75 sm:scale-75 md:scale-125' width={560*.7} height={315*.7} src="https://www.youtube.com/embed/iSz4fAhKNXI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
+        </div>
+
 
 
         <div className='my-56 flex flex-col items-center'>
