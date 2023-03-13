@@ -53,7 +53,7 @@ const VGSMTRAVEL = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-col gap-4 h-[350px] lg:h-auto justify-center items-center px-4 py-20 bg-left bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/about-card.png)' }} ></div>
+        <div className='w-full flex flex-col gap-4 h-[350px] lg:h-auto justify-center items-center px-4 py-20 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/vgsm-travel-img1.jpeg)' }} ></div>
       </div>
 
       <CTA1 />
