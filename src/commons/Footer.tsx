@@ -3,13 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const ITEMS = [
-  { path:'/', name:'home' },
-  { path:'/services', name:'services' },
-  { path:'/VGSM-TRAVEL', name:'VGSM TRAVEL' },
-  { path:'/facilities', name:'facilities' },
-  { path:'/partnersAndSponsors', name:'partners' },
-  { path:'/aboutUs', name:'about us' },
-  { path:'/contact', name:'contact' },
+  { path:'/', name:'Home' },
+  { path:'/services', name:'Services' },
+  { path:'/VGSM-TRAVEL', name:'VGSM Travel' },
+  { path:'/facilities', name:'Facilities' },
+  { path:'/partnersAndSponsors', name:'Partners' },
+  { path:'/aboutUs', name:'About Us' },
+  { path:'/contact', name:'Contact' },
 ]
 
 export const Footer = () => {
