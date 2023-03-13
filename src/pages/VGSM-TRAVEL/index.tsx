@@ -27,7 +27,7 @@ const VGSMTRAVEL = () => {
   return (
     <div>
 
-    <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/VGSMTRAVEL-card.png)' }}>
+    <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/VGSMTRAVEL-card.jpeg)' }}>
       <div className='rotate-0 bg-black py-36 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
         <div className='w-[150px] md:w-[200px] relative min-h-[200px] md:min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
           <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
