@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { SyntheticEvent, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { BeatLoader } from 'react-spinners'
 
 const ITEMS = [
   { path:'/', name:'Home' },
@@ -13,6 +14,60 @@ const ITEMS = [
 ]
 
 export const Footer = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState<any>('')
+  
+  const [isSending, setIsSending] = useState(false)
+  const [isSuccess, setIsSuccess] = useState(false)
+  const [isError, setIsError] = useState(false)
+
+  const handleIsSending = () => {
+      setIsSending(true)
+      setIsSuccess(false)
+      setIsError(false)
+  }
+
+  const handleIsSuccess = () => {
+      setIsSuccess(true)
+      setIsSending(false)
+      setIsError(false)
+  }
+
+  const handleIsError = () => {
+      setIsError(true)
+      setIsSuccess(false)
+      setIsSending(false)
+  }
+
+  const handleSubmit = (e:SyntheticEvent) => {
+      e.preventDefault()
+      handleIsSending()
+      const data = {
+          name,
+          email,
+          phone,
+          isFromFooter:true
+      }
+      fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+        .then(data=>data.json())
+        .then(data=>{
+          handleIsSuccess()
+        })
+        .catch(e => {
+          handleIsError()
+        })
+  }
+
+
+
   return (
     <div className='flex w-full flex-col lg:flex-row'>
 
@@ -20,27 +75,47 @@ export const Footer = () => {
           <div className='w-[80%] px-2'>
             <h2 className='text-4xl text-white font-bold mb-14 py-5 text-center lg:text-left'>Contact Us</h2>
             <p className='text-white text-xl font-medium lg:max-w-[500px] mb-14 text-center lg:text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            <form action="" className=''>
+            <form onSubmit={handleSubmit} action="" className=''>
               <div className='flex flex-col mb-12'>
                 <label htmlFor="" className='text-lg text-white font-bold '>Name</label>
-                <input type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
+                <input value={name} onChange={(e)=>setName(e.target.value)} type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
               </div>
               <div className='flex flex-col mb-12'>
                 <label htmlFor="" className='text-lg text-white font-bold '>Email</label>
-                <input type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
+                <input value={email} onChange={(e)=>setEmail(e.target.value)} type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
               </div>
               <div className='flex flex-col mb-12'>
                 <label htmlFor="" className='text-lg text-white font-bold '>Phone Number</label>
-                <input type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
+                <input value={phone} onChange={(e)=>setPhone(e.target.value)} type="text" className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} />
               </div>
-              {/* <div className='flex flex-col mb-12'>
-                <label htmlFor="" className='text-lg text-white font-bold'>Message</label>
-                <textarea className={`text-xl w-full py-1 outline-none bg-transparent border-b-white border-b-2 text-white`} ></textarea>
-              </div> */}
+              <div className='flex w-full justify-center'>
+                      { (!isError && !isSending && !isSuccess) && (
+                          <button 
+                              type='submit'
+                              className='py-3 px-20  rounded-md bg-clip-padding   border border-gray-100 text-white font-bold text-2xl'>
+                                  Send
+                          </button>
+                      )}
+                      {!isError && isSending && (
+                          <div>
+                              <BeatLoader color="#fff" />
+                          </div>
+                      )}
+                      {(!isError && !isSending && isSuccess) && (
+                          <div>
+                              <p className='text-xl text-white font-bold'>Sended Successfully! We will contact you soon.</p>
+                          </div>
+                      )}
+                      {(isError) && (
+                          <div>
+                              <p className='text-xl text-white font-bold'>Ups! an error happens. reload the page and try again.</p>
+                          </div>
+                      )}
+                  </div>
             </form>
-            <div className='flex w-full justify-center lg:justify-end'>
-              <button className='px-14 py-1 rounded-lg border-white border-2 outline-none text-white font-bold text-xl'>Send</button>
-            </div>
+
+
+
           </div>
         </div>
 

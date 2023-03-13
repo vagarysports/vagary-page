@@ -50,8 +50,34 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse<a
         const mailOptions = {
           from: "Vagary Sports <sid.cd.varma@gmail.com>",
           to: "jorgezerpacoder@gmail.com",
-          subject: "Gmail API NodeJS",
-          html:`<div>${req.body.email}</div>`
+          subject: "NEW VAGARY CLIENT (from web page contact form)",
+          html:`
+            <h1 style="font-size:22px; color: #000">Good Morning! A New Client is Interested on Vagary's Services</h2>
+            <h3 style="font-size:20px; color: #000">Client Info:</h3>
+            ${ req.body.isFromFooter ? (
+              `
+                <ul style="font-size:14px; color: #000">
+                  <li>Name: ${req.body.name}</li>
+                  <li>lastName: ${req.body.email}</li>
+                  <li>phone: ${req.body.phone}</li>
+                </ul>
+              `
+              ) : (
+              `
+                <ul style="font-size:14px; color: #000">
+                  <li>firstName: ${req.body.firstName}</li>
+                  <li>lastName: ${req.body.lastName}</li>
+                  <li>email: ${req.body.email}</li>
+                  <li>team: ${req.body.team}</li>
+                  <li>level: ${req.body.level}</li>
+                  <li>phone: ${req.body.phone}</li>
+                  <li>start Date: ${req.body.startDate && req.body.startDate.startDate}</li>
+                  <li>end Data: ${req.body.endDate && req.body.endDate.startDate}</li>
+                </ul>
+              `
+            ) }
+          `
+
         };
   
         const result = await transport.sendMail(mailOptions);

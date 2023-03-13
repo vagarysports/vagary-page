@@ -5,6 +5,7 @@ import { TextInput } from './form/TextInput'
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css';
 import styles from '../styles/ContactForm.module.css'
+import { BeatLoader } from 'react-spinners';
 
 const ContactForm = () => {
     const [lastName, setLastName] = useState('')
@@ -15,7 +16,7 @@ const ContactForm = () => {
     const [phone, setPhone] = useState<any>()
     const [startDate, setStartDate] = useState('')
     const [endDate, setEndDate] = useState('')
-
+    
     const [isSending, setIsSending] = useState(false)
     const [isSuccess, setIsSuccess] = useState(false)
     const [isError, setIsError] = useState(false)
@@ -111,15 +112,27 @@ const ContactForm = () => {
                 </div>
 
                 <div className='flex w-full justify-center'>
-                    { !isSending && (
+                    { (!isError && !isSending && !isSuccess) && (
                         <button 
                             type='submit'
                             className='py-3 px-20 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 hover:bg-opacity-30 hover:scale-95 transition-all border border-gray-100 text-white font-bold text-2xl'>
                                 Send
                         </button>
                     )}
-                    {isSending && (
-                        <div>sending...</div>
+                    {!isError && isSending && (
+                        <div>
+                            <BeatLoader color="#fff" />
+                        </div>
+                    )}
+                    {(!isError && !isSending && isSuccess) && (
+                        <div>
+                            <p className='text-xl text-white font-bold'>Sended Successfully! We will contact you soon.</p>
+                        </div>
+                    )}
+                    {(isError) && (
+                        <div>
+                            <p className='text-xl text-white font-bold'>Ups! an error happens. reload the page and try again.</p>
+                        </div>
                     )}
                 </div>
               
