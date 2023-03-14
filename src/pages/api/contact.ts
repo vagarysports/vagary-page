@@ -84,7 +84,6 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse<a
         const result = await transport.sendMail(mailOptions);
         res.send(result);
     } catch (error) {
-      console.log(error);
-      res.send(error);
+      throw error
     }
   }

@@ -73,7 +73,7 @@ const ContactForm = () => {
     <div className='flex justify-center'> 
             <form onSubmit={handleSubmit} className='w-[90%] px-2 md:px-10 py-20 mb-20 rounded-3xl transition-all  h-full bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100' >
                 <div className=' flex w-full gap-5 flex-col sm:flex-row'> 
-                    <TextInput value={firstName} changeHandler={(value)=>setFirstName(value)} isValid={firstName.length>0} placeHolder='Lirst Name' isRequired={true}  />
+                    <TextInput value={firstName} changeHandler={(value)=>setFirstName(value)} isValid={firstName.length>0} placeHolder='First Name' isRequired={true}  />
                     <TextInput value={lastName} changeHandler={(value)=>setLastName(value)} isValid={lastName.length>0} placeHolder='Last Name' isRequired={true}  />
                 </div>
 
