@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { FacilitiesSlider } from '@/components/facilitiesSlider';
 import { CTA1 } from '@/components/CTAs/facilities/CTA1';
 import { useRouter } from 'next/router';
+import { field, restaturant, rooms, terasse } from '@/constants/facilitiesSliderImages';
 
 const Facilities = () => {
   const router = useRouter()
@@ -110,8 +111,14 @@ const Facilities = () => {
 
 
         <div className='my-56 flex flex-col items-center'>
-          {/* <h2 className='text-2xl font-bold text-center px-1 '>Take an inside View to our Facilities</h2> */}
-          <FacilitiesSlider  />
+          <h2 className='text-2xl font-bold text-center px-1 '>fields</h2>
+          <FacilitiesSlider images={field}  />
+          <h2 className='text-2xl font-bold text-center px-1 mt-20'>restaurant</h2>
+          <FacilitiesSlider images={restaturant}  />
+          <h2 className='text-2xl font-bold text-center px-1 mt-20'>rooms</h2>
+          <FacilitiesSlider images={rooms}  />
+          <h2 className='text-2xl font-bold text-center px-1 mt-20'>terasse</h2>
+          <FacilitiesSlider images={terasse}  />
         </div>
 
         <CTA1 />

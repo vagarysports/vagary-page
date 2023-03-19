@@ -1,0 +1,23 @@
+.before{
+    position: relative;
+    border: 2px solid red;
+}
+
+/* .before::before{
+    content: "";
+    position: absolute;
+    width: 90vh;
+    height: 90vw;
+    transform-origin: center;
+    top: 0; left: 0;
+    z-index: 10;
+    background: url(background.jpg) 0 0 repeat;
+    background: purple;
+    transform: rotate(90deg);
+} */
+/* .before::before{
+    content: "";
+    position: absolute;
+    width: 90vh;
+    height: 90vw;
+} */

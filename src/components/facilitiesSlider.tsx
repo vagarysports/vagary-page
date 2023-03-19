@@ -4,32 +4,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 
-const images = [
-  { path:'/images/facilities/field1.png' },
-  { path:'/images/facilities/field2.png' },
-  { path:'/images/facilities/field3.jpeg' },
-  { path:'/images/facilities/field4.jpeg' },
-  { path:'/images/facilities/fieldabove.png' },
-  { path:'/images/facilities/fields.jpg' },
-  { path:'/images/facilities/food1.jpeg' },
-  { path:'/images/facilities/food2.jpeg' },
-  { path:'/images/facilities/food3.jpeg' },
-  { path:'/images/facilities/food4.jpeg' },
-  { path:'/images/facilities/terasse.jpeg' },
-  { path:'/images/facilities/terasse2.jpeg' },
-  { path:'/images/facilities/terasse3.jpeg' },
-  { path:'/images/facilities/room1.jpeg' },
-  { path:'/images/facilities/room2.jpeg' },
-  { path:'/images/facilities/room3.jpeg' },
-  { path:'/images/facilities/room4.jpeg' },
-  { path:'/images/facilities/room5.jpeg' },
-  { path:'/images/facilities/room6.jpeg' },
-  { path:'/images/facilities/room7.jpeg' },
-]
+type Image = { path:string }
 
-export const FacilitiesSlider = () => {
+
+export const FacilitiesSlider = ({ images }: { images:Image[] }) => {
   const [cellWidth, setCellWidth] = useState(0)
-  
+  const [selectedImage, setSelectedImage] = useState('')
+
+
   useEffect(()=>{
     if(window.innerWidth<600){
       setCellWidth(90)
@@ -56,6 +38,10 @@ export const FacilitiesSlider = () => {
     })
   }, [])
 
+  const handleClick = (item:Image) => {
+    setSelectedImage(item.path)
+  }
+
 
   return (
     <div className='w-[90%]'>
@@ -67,14 +53,22 @@ export const FacilitiesSlider = () => {
               centerMode
               centerSlidePercentage={cellWidth}
               showThumbs={false}
-              showIndicators={false}
+              // showIndicators={false}
               showStatus={false}
               autoPlay
             >
               {images.map(image=>(
-                  <div key={image.path+'image-carousel'} className='w-full h-[400px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:`url(${image.path})` }}></div>
+                  <div onClick={()=>handleClick(image)} key={image.path+'image-carousel'} className='w-full h-[400px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:`url(${image.path})` }}></div>
               ))}
             </Carousel>
+
+
+            <div onClick={()=>setSelectedImage('')} className={`${selectedImage ? 'block' : 'hidden'} flex justify-center items-center z-50 fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80`}>
+                <div className='bg-white shrink-0 p-1 md:p-4 w-[75vh] h-[90vw] sm:w-[70%] sm:h-[70vh] rotate-90 sm:rotate-0'>
+                  <div className={`w-full h-full bg-center bg-no-repeat bg-cover `} style={{ backgroundImage: `url(${selectedImage})` }}>
+                  </div>
+                </div>
+            </div>
 
     </div>
   )
