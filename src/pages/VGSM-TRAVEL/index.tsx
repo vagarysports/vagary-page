@@ -47,7 +47,7 @@ const VGSMTRAVEL = () => {
       <div className='flex  text-black flex-col-reverse lg:flex-row w-[97%] lg:w-[90%] bg-gray-100 shadow-md shadow-gray-500 rounded-xl overflow-hidden mx-auto' >
         <div className='w-full flex  justify-center items-center p-5 py-10 md:py-20 white'>
           <div className='w-full max-w-[700px]'>
-            <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>The client will have complete freedom to organize the trip as desired. The coaches or managers of the trip can tell us what the objective is and Vagary will adapt around the client´s objective. In addition, we have additional services such as video analysis, technical talks with coaches of the First and Second Division, etc…</p>
+            <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>The client will have complete freedom to organize the trip as desired. The coaches or managers of the trip can tell us what the objective is and Vagary will adapt around the client´s objective. In addition, we have additional services such as video analysis, technical talks with top tier Spanish coaches…</p>
             <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>Vagary will take care of the client´s needs from the time they land at Barajas International Airport until they leave for the United States. Our prices include everything, lodging, meals, transportation, sports equipment, etc… The client will only have to take care of the travel insurance and the plane ticket.</p>
             <p className='text-justify mb-10 text-xl md:text-2xl  font-bold '>We offer our services to youth soccer clubs, college teams and professional teams</p>
           </div>

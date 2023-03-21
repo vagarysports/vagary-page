@@ -11,7 +11,8 @@ const Contact = () => {
       </div>
       <div className='bg-white min-h-screen h-full w-2 hidden md:block'></div>
       <div className='w-full'>
-        <h2 className={`mb-14 mt-10 md:mt-0 text-6xl md:text-8xl font-bold w-full text-center md:w-auto md:text-left text-white px-10 ${styles.borderText}`} >Contact Us</h2>
+        <h2 className={`mb-4 mt-10 md:mt-0 text-6xl md:text-8xl font-bold w-full text-center md:w-auto md:text-left text-white px-10 ${styles.borderText}`} >Contact Us</h2>
+        <p className={`mb-14 mt-10 md:mt-0 text-2xl font-normal w-full text-center md:w-auto md:text-left text-white px-10 ${styles.subtitle}`} >For any inquiries or additional questions, feel free to contact us</p>
         <ContactForm />
       </div>
     </div>

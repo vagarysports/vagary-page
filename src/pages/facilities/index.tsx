@@ -111,13 +111,13 @@ const Facilities = () => {
 
 
         <div className='my-56 flex flex-col items-center'>
-          <h2 className='text-2xl font-bold text-center px-1 '>fields</h2>
+          <h2 className='text-2xl font-bold text-center px-1 '>FIELDS</h2>
           <FacilitiesSlider images={field}  />
-          <h2 className='text-2xl font-bold text-center px-1 mt-20'>restaurant</h2>
+          <h2 className='text-2xl font-bold text-center px-1 mt-20'>RESTAURANT</h2>
           <FacilitiesSlider images={restaturant}  />
-          <h2 className='text-2xl font-bold text-center px-1 mt-20'>rooms</h2>
+          <h2 className='text-2xl font-bold text-center px-1 mt-20'>ROOMS</h2>
           <FacilitiesSlider images={rooms}  />
-          <h2 className='text-2xl font-bold text-center px-1 mt-20'>terasse</h2>
+          <h2 className='text-2xl font-bold text-center px-1 mt-20'>TERASSE</h2>
           <FacilitiesSlider images={terasse}  />
         </div>
 

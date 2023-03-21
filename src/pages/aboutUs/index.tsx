@@ -20,23 +20,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <section className='px-0 lg:px-20'>
-        <div className='flex justify-center items-center gap-10 p-10'>
-              <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/vagary-beginnings.png)' }}></div>
-              <div className='w-full hidden md:block relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/aboutUs3.jpg)' }}></div>
-        </div>
-
-        <div className='flex-1 p-5 md:p-10 md:px-10'>
-          <p className='text-justify sm:text-center text-xl lg:text-2xl text-[#938787] font-bold mb-10'>With more than 20+ years of experience playing soccer in Madrid, we have a vast network in the city with clubs such as Real Madrid, Atletico de Madrid, Leganes, Alcorcon, Rayo Vallecano, etc…</p>
-          <p className='text-justify text-base lg:text-xl text-[#888888] '>We also have a global presence with projects in Argentina, Spain, USA and Germany. We work closely with JJ Sport Management where we acquired extensive experience assisting high value LaLiga-Premier League transfers. We have actively collaborated with JJ Sport Management in recent years advising on sports, marketing, sponsorship of their athletes based in the main European Soccer Leagues.</p>
-        </div>        
-        
-        <div className='flex justify-center items-center gap-10 p-10'>
-              <div className='w-full md:hidden block relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/aboutUs3.jpg)' }}></div>
-        </div>
-      </section>
-
-      <div className='bg-[#141618] py-10 px-5 sm:px-10'>
+      <div className='bg-[#141618] pt-36 py-10 px-5 sm:px-10'>
         <h2 className='text-5xl sm:text-7xl text-white font-bold text-center'>Meet The <br/>Founders</h2>
       </div>
 
@@ -58,13 +42,13 @@ const AboutUs = () => {
             <div className='w-full relative h-[500px] max-w-[800px]'>
               <Image alt="" src="/images/mike-playing.jpg" fill style={{ objectFit:'cover', objectPosition:'top center' }}/>
             </div>
-            <p className='text-sm italic text-white'>Mike playing X game with X team in X date</p>
+            {/* <p className='text-sm italic text-white'>Mike playing X game with X team in X date</p> */}
       </div>
 
       <div className='bg-[#141618] flex flex-col md:flex-row justify-center items-center py-20   lg:px-20 '>
           <div className='flex-1 '>
             <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px]'>
-              <Image alt="" src="/images/daniel.jpg" fill style={{ objectFit:'cover', objectPosition:'top center' }}/>
+              <Image alt="" src="/images/daniel-cup.jpg" fill style={{ objectFit:'cover', objectPosition:' center' }}/>
             </div>
           </div>
           <div className='flex-1 p-5 md:p-10 '>
@@ -76,11 +60,27 @@ const AboutUs = () => {
       </div>
 
       <div className='bg-[#121618] flex justify-center items-center flex-col gap-2 p-3 pb-20'>
-            <div className='w-full relative h-[500px] max-w-[300px]'>
-              <Image alt="" src="/images/daniel-cup.jpg" fill style={{ objectFit:'cover', objectPosition:'top center' }}/>
+            <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px] max-w-[700px]'>
+              <Image alt="" src="/images/daniel-playing.jpeg" fill style={{ objectFit:'cover', objectPosition:'top center' }}/>
             </div>
-            <p className='text-sm italic text-white'>Daniel Receiving X awward of X cup</p>
+            {/* <p className='text-sm italic text-white'>Daniel Receiving X awward of X cup</p> */}
       </div>
+
+      <section className='px-0 lg:px-20'>
+        <div className='flex justify-center items-center gap-10 p-10'>
+              <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/vagary-beginnings.png)' }}></div>
+              <div className='w-full hidden md:block relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/aboutUs3.jpg)' }}></div>
+        </div>
+
+        <div className='flex-1 p-5 md:p-10 md:px-10'>
+          <p className='text-justify sm:text-center text-xl lg:text-2xl text-[#938787] font-bold mb-10'>With more than 20+ years of experience playing soccer in Madrid, we have a vast network in the city with clubs such as Real Madrid, Atletico de Madrid, Leganes, Alcorcon, Rayo Vallecano, etc…</p>
+          <p className='text-justify text-base lg:text-xl text-[#888888] '>We also have a global presence with projects in Argentina, Spain, USA and Germany. We work closely with JJ Sport Management where we acquired extensive experience assisting high value LaLiga-Premier League transfers. We have actively collaborated with JJ Sport Management in recent years advising on sports, marketing, sponsorship of their athletes based in the main European Soccer Leagues.</p>
+        </div>        
+        
+        <div className='flex justify-center items-center gap-10 p-10'>
+              <div className='w-full md:hidden block relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/aboutUs3.jpg)' }}></div>
+        </div>
+      </section>
 
       <CTA2 />
      
