@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,14 +16,31 @@ const ITEMS = [
 
 export const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
+    const [hideOnScroll, setHideOnScroll] = useState(false)
+    const [lastScrollY, setLastScrollY] = useState(0);
     const { pathname } = useRouter()
+
+    //setup an useEffect react hook with an scroll event listener
+    useEffect(() => {
+        const controlNavbar = () => {
+              if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+                setHideOnScroll(true); 
+              } else { // if scroll up show the navbar
+                setHideOnScroll(false);  
+              }        
+              setLastScrollY(window.scrollY); 
+            }
+
+        window.addEventListener('scroll', controlNavbar)
+    })
+
 
     const handleCloseMenu = () => {
         setTimeout(()=>setShowMenu(false), 500)
     }
 
   return (
-    <nav className="fixed z-40 top-0 left-0 w-full border-gray-200 px-2 py-2.5 bg-black ">
+    <nav className={`${hideOnScroll && 'scale-y-0'} transition-all origin-top fixed z-40 top-0 left-0 w-full border-gray-200 px-2 py-2.5 bg-black `}>
         <div className="flex items-center justify-between lg:justify-start w-full">
 
             <Link href={'/'} className="block text-white rounded">
@@ -74,3 +91,6 @@ export const Navbar = () => {
     </nav>
   )
 }
+
+
+
