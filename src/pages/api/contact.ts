@@ -53,11 +53,11 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse<a
           // to: "jorgezerpacoder@gmail.com",
           subject: "NEW VAGARY CLIENT (from web page contact form)",
           html:`
-            <h1 style="font-size:22px; color: #000">Good Morning! A New Client is Interested on Vagary's Services</h2>
-            <h3 style="font-size:20px; color: #000">Client Info:</h3>
+            <h1 style="font-size:22px; color: #000000">A New Client is Interested on Vagary's Services</h2>
+            <h3 style="font-size:20px; color: #000000">Client Info:</h3>
             ${ req.body.isFromFooter ? (
               `
-                <ul style="font-size:14px; color: #000">
+                <ul style="font-size:14px; color: #000000">
                   <li>Name: ${req.body.name}</li>
                   <li>lastName: ${req.body.email}</li>
                   <li>phone: ${req.body.phone}</li>
@@ -65,7 +65,7 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse<a
               `
               ) : (
               `
-                <ul style="font-size:14px; color: #000">
+                <ul style="font-size:14px; color: #000000">
                   <li>firstName: ${req.body.firstName}</li>
                   <li>lastName: ${req.body.lastName}</li>
                   <li>email: ${req.body.email}</li>
