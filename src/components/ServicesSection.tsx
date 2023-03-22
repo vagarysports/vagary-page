@@ -62,10 +62,10 @@ export const ServicesSection = () => {
                     />
                     </svg>
                 </div>
-                <h4 className="text-dark mb-3 text-xl font-semibold">
+                <h4 className="text-dark mb-5 text-2xl font-semibold text-center sm:text-justify">
                     { item.title }
                 </h4>
-                <p className="text-body-color ">
+                <p className="text-[#444] text-lg tracking-wide text-justify">
                     { item.description }
                 </p>
                 </div>
