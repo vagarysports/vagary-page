@@ -49,7 +49,7 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse<a
 
         const mailOptions = {
           from: "Vagary Sports <sid.cd.varma@gmail.com>",
-          to: "jorgezerpacoder@gmail.com,diazgarciad@vagarysports.com,mhornsby@vagarysports.com",
+          to: "diazgarciad@vagarysports.com,mhornsby@vagarysports.com",
           // to: "jorgezerpacoder@gmail.com",
           subject: "NEW VAGARY CLIENT (from web page contact form)",
           html:`
