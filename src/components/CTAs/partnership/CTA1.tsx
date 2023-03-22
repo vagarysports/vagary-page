@@ -25,13 +25,13 @@ export const CTA1 = () => {
     <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
       <div
         className="bg-gray-100 shadow-lg shadow-gray-300 h-full rounded-lg p-6 lg:pl-12 text-primary flex items-center text-center lg:text-left">
-        <div className="lg:pl-12">
-          <h2 className="text-3xl font-bold mb-6">Facilities in Cazalegas</h2>
+        <div className="w-full flex flex-col justify-center items-center">
+          <h2 className="text-5xl font-bold mb-6">Facilities in Cazalegas</h2>
           <p className="mb-6 pb-2 lg:pb-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, sint, repellat vel quo quisquam accusamus in qui at ipsa enim quibusdam illo laboriosam omnis. Labore itaque illum distinctio eum neque!
+            {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, sint, repellat vel quo quisquam accusamus in qui at ipsa enim quibusdam illo laboriosam omnis. Labore itaque illum distinctio eum neque! */}
           </p>
           <button onClick={()=>router.push('/facilities')} type="button" className="inline-block px-7 py-3 border-2 border-primary text-primary font-bold text-sm leading-snug uppercase rounded-xl hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" >
-            See Facilities
+            Take a look
           </button>
         </div>
       </div>

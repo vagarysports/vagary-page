@@ -26,7 +26,7 @@ export const CTA2 = () => {
 
       <div className="mb-12 lg:mb-0">
         <div className="relative w-full min-h-[500px] rounded-lg shadow-lg">
-            <Image src="/images/services-card.png" alt='' fill style={{ objectFit:'cover' }} /> 
+            <Image src="/images/services-card.jpg" alt='' fill style={{ objectFit:'cover' }} /> 
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ export default function Home() {
           {/* <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center mx-4 px-2 xs:px-10 md:px-32 py-10 md:py-20 w-full max-w-[800px] text-white bg-black font-bold text-base leading-6 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
             Vagary Sports Management is a company that specializes in organizing highly personalized soccer tours to Spain for clubs, academies, ODPs, colleges, and universities. With over 20 years of experience living, coaching, playing and representing Athletes in the country, the owners of Vagary Sports Management developed a wealth of knowledge  and personal contacts that they put at the service of clients.
           </div> */}
-          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-left xs:text-center mx-4 px-2 xs:px-10 md:px-28 py-10 md:py-32 w-full max-w-[800px] text-white bg-black font-bold text-base leading-7 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
+          <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-justify xs:text-center mx-4 px-2 xs:px-10 md:px-28 py-10 md:py-32 w-full max-w-[800px] text-white bg-black font-bold text-base leading-7 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
               <p className="mb-7 md:mb-0">We specialize in maximizing your experience.</p>
               <p className="mb-7 md:mb-0">Professionalism in everything we do.</p>            
               <p className="mb-7 md:mb-0">Your plans are at the center of our service.</p>            
@@ -50,7 +50,7 @@ export default function Home() {
 
 
       <section>
-        <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-start px-24">
+        <div className="pb-36 w-full min-h-screen bg-primary flex flex-col items-center justify-start px-24">
           <div className="flex flex-col gap-10 items-center justify-start py-10">
             <HomeCard path="/services" title="Services" backgroundImage="/images/services-card.jpg" />
             <HomeCard path="/VGSM-TRAVEL" title="VGSM-TRAVEL" backgroundImage="/images/VGSMTRAVEL-card.jpeg" />
@@ -62,12 +62,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+              {/* TESTIMONIES SECTION */}
+      {/* <section>
         <div className="w-full bg-primary flex flex-col items-center justify-start px-2 pb-48 pt-40">
           <h3 className="w-full text-center font-bold text-xl xs:text-2xl text-white mb-10">What Our Clients Have To Say</h3>
           <Testimonies />
         </div>
-      </section>
+      </section> */}
 
 
     </>

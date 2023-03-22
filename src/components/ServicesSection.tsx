@@ -34,8 +34,8 @@ export const ServicesSection = () => {
                 What We Offer
             </h2>
             <p className="text-body-color text-base">
-                There are many trips of passages of Lorem Ipsum available but
-                the majority have suffered alteration in some form.
+                {/* There are many trips of passages of Lorem Ipsum available but
+                the majority have suffered alteration in some form. */}
             </p>
             </div>
         </div>
@@ -65,7 +65,7 @@ export const ServicesSection = () => {
                 <h4 className="text-dark mb-3 text-xl font-semibold">
                     { item.title }
                 </h4>
-                <p className="text-body-color">
+                <p className="text-body-color ">
                     { item.description }
                 </p>
                 </div>
