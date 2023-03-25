@@ -22,22 +22,70 @@ const Facilities = () => {
           </div>
         </div>
 
-        <div className='flex w-full py-0 flex-col lg:flex-row-reverse gap-10 sm:gap-0'>
+        <div className='flex w-full py-0 flex-col md:flex-row-reverse gap-10 sm:gap-0'>
           <div className='w-full px-5 py-14 flex justify-center items-center lg:items-start flex-col'>
             <div>
               <p className='text-justify font-bold text-base mb-4 max-w-[500px] tracking-wider leading-8'> Ebora Sports City is built on a 42,500 square meter lot and includes the following: </p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> two full sized latest generation artificial grass fields (official and regulatory measures)</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> indoor soccer court</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> four 7-a-side soccer courts</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> two tennis courts</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> multi-sports courts</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> changing rooms</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> gym</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> residence (2 person bedroom with a shared bathroom)</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> two basketball courts</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> four paddle tennis courts</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> swimming pool</p>
-              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> restaurant with outside terrace</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                two full sized latest generation artificial grass fields (official and regulatory measures)</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                indoor soccer court</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                four 7-a-side soccer courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                two tennis courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                multi-sports courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                changing rooms</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                gym</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                residence (2 person bedroom with a shared bathroom)</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                two basketball courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                four paddle tennis courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                swimming pool</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'>
+                <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="6" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#000"/></svg>
+                </span>
+                restaurant with outside terrace</p>
 
             </div>
           </div>

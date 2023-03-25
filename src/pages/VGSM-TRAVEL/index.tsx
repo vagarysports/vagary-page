@@ -39,10 +39,30 @@ const VGSMTRAVEL = () => {
           <div className='w-full max-w-[700px] sm:px-4'>
             <p className='mt-10 md:mt-0 mb-10 text-center md:text-left text-5xl md:text-7xl lg:text-8xl font-bold'>Our Model</p>
             <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>We provide a framework. Everything on top of that is your customization. (Add a model for this.) We realize teams go on overseas trips for various different reasons. Our facility provides a hub for many scenarios.</p>
-            <p className='ml-5 text-justify mb-5  text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> If you`re looking for an isolated training environment to maximize preparation for the upcoming season.</p>
-            <p className='ml-5 text-justify mb-5  text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> If you’re coming to Spain to play academy tournaments, we can provide entry into high-level Spanish summer tournaments. </p>
-            <p className='ml-5 text-justify mb-5  text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> If you want a full Spanish cultural experience in which soccer may not be the priority, we provide transportation and off-time activities for teams. Within close proximity of Madrid and Toledo there is plenty to do outside the facility. </p>
-            <p className='ml-5 text-justify mb-20 text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> We provide competitive Spanish opposition for games. We will match the level of teams based on your team’s ability. </p>
+            <p className=' md:ml-5 text-justify mb-5  text-sm sm:text-base '>
+              <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="7" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black"/></svg>
+                
+              </span> 
+              If you`re looking for an isolated training environment to maximize preparation for the upcoming season.</p>
+            <p className=' md:ml-5 text-justify mb-5  text-sm sm:text-base '>
+              <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="7" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black"/></svg>
+                
+              </span> 
+              If you’re coming to Spain to play academy tournaments, we can provide entry into high-level Spanish summer tournaments. </p>
+            <p className=' md:ml-5 text-justify mb-5  text-sm sm:text-base '>
+              <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="7" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black"/></svg>
+                
+              </span> 
+              If you want a full Spanish cultural experience in which soccer may not be the priority, we provide transportation and off-time activities for teams. Within close proximity of Madrid and Toledo there is plenty to do outside the facility. </p>
+            <p className=' md:ml-5 text-justify mb-20 text-sm sm:text-base '>
+              <span className='ml-5 mr-1 text-2xl font-bold'>
+                <svg className='inline-block' width="7" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black"/></svg>
+                
+              </span> 
+              We provide competitive Spanish opposition for games. We will match the level of teams based on your team’s ability. </p>
             <p className='text-center mb-5 text-xl md:text-2xl  font-bold '>We offer our services to youth soccer clubs, college teams and professional teams</p> 
           </div>
         </div>
