@@ -56,7 +56,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 items-center justify-start py-10">
             <HomeCard path="/services" title="Services" backgroundImage="/images/services-card.jpg" />
             <HomeCard path="/VGSM-TRAVEL" title="VGSM-TRAVEL" backgroundImage="/images/VGSMTRAVEL-card.jpeg" />
-            <HomeCard path="/facilities" title="Facilities" backgroundImage="/images/facilities/fieldabove.png" />
+            <HomeCard path="/facilities" title="Facilities" backgroundImage="/images/facilities/field1.png" />
             <HomeCard path="/partnersAndSponsors" title="Partners" backgroundImage="/images/partners-card.png" />
             <HomeCard path="/aboutUs" title="About Us" backgroundImage="/images/about-card.png" />
             <HomeCard path="/contact" title="Contact Us" backgroundImage="/images/contact-card.png" />
