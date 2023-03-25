@@ -5,10 +5,12 @@ import { ScrollDownButton } from './ScrollDownButton'
 type Props = {
     title: string
     description?: string
-    bgImage: string
+    bgImage: string,
+    scrollToId: string
 }
 
-export const Header = ({ title, description, bgImage }:Props) => {
+export const Header = ({ title, description, bgImage, scrollToId }:Props) => {
+    console.log('--->',scrollToId)
   return (
     <>
         { !description && (
@@ -23,7 +25,7 @@ export const Header = ({ title, description, bgImage }:Props) => {
                             <h2 className='text-6xl sm:text-8xl font-bold text-white text-center md:text-left'>{ title }</h2>
                         </div>
                     </div>
-                    <ScrollDownButton />
+                    <ScrollDownButton scrollToId={scrollToId} />
                 </div>
             </div>
         )}
@@ -40,7 +42,7 @@ export const Header = ({ title, description, bgImage }:Props) => {
                             <p className='tracking-wider max-w-[500px] text-white text-justify px-3 md:text-lg '>{ description }</p>
                         </div>
                     </div>
-                    <ScrollDownButton />
+                    <ScrollDownButton scrollToId={scrollToId} />
                 </div>
             </div>
         )}

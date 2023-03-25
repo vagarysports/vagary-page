@@ -11,11 +11,11 @@ const Facilities = () => {
 
   return (
     <div className='pt-10'>
-        <Header title='Facilities' bgImage='/images/facilities/fieldabove.png' />
+        <Header title='Facilities' bgImage='/images/facilities/field1.png' scrollToId='facilitiesSlide1' />
 
-        <div className='bg-gray-100 flex py-0 flex-col mx-auto my-20 lg:flex-row w-[95%] lg:w-[90%] rounded-3xl overflow-hidden shadow-gray-400 shadow-md'>
+        <div id='facilitiesSlide1' className='bg-gray-100 flex py-0 flex-col mx-auto my-20 lg:flex-row w-[95%] lg:w-[90%] rounded-3xl overflow-hidden shadow-gray-400 shadow-md'>
           <div className='w-full px-2 sm:px-5  flex justify-center items-center py-10 md:py-20'>
-            <p className='text-center font-bold text-sm sm:text-xl  max-w-[500px]  tracking-wider leading-8'>Vagary Sports Management has the exclusive privilege through its collaboration with Ebora Formacion Deportiva, of offering the use of the new sports facilities at Ebora Formacion in Talavera de la Reina. Located just 70 miles from Madrid, these facilities, which were built in 2021, include a residence, restaurant, and two full-size soccer fields.</p>
+            <p className='text-center font-bold text-sm sm:text-xl  max-w-[500px]  tracking-wider leading-8'>Vagary Sports Management has the exclusive privilege to partner with Ebora Formacion Deportiva. This brand new facility is located in Talavera de la Reina just 70 miles from Madrid and 45 miles from the historic town of Toledo. These facilities which were built in 2021 include a residence, restaurant, two full-sized soccer fields, pool area, and much more.</p>
           </div>
           <div className='w-full flex flex-col min-h-[400px] md:min-h-[500px] gap-4 justify-center items-center px-4 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/facilities/field2.png)' }}>
             
@@ -25,7 +25,20 @@ const Facilities = () => {
         <div className='flex w-full py-0 flex-col lg:flex-row-reverse gap-10 sm:gap-0'>
           <div className='w-full px-5 py-14 flex justify-center items-center lg:items-start flex-col'>
             <div>
-              <p className='text-justify font-bold text-base mb-10 max-w-[500px] tracking-wider leading-8'> The Sports City is built on a 42,500 square meter lot and includes two artificial grass fields, two tennis courts, multi-sports courts, a changing room, gym, and parking, among other amenities. The Sports City has a range of spaces that can be used for a variety of different activities, including two 11-a-side soccer courts, four 7-a-side soccer courts, two basketball courts, changing rooms, four paddle tennis courts, two tennis courts, an indoor soccer court, and a swimming pool. Equipped with two 11-a-side soccer fields of the latest generation of artificial turf, with official and regulatory measures. Also our residence in Madrid, is divided into shared (2 persons) room with a shared bathroom. </p>
+              <p className='text-justify font-bold text-base mb-4 max-w-[500px] tracking-wider leading-8'> Ebora Sports City is built on a 42,500 square meter lot and includes the following: </p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> two full sized latest generation artificial grass fields (official and regulatory measures)</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> indoor soccer court</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> four 7-a-side soccer courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> two tennis courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> multi-sports courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> changing rooms</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> gym</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> residence (2 person bedroom with a shared bathroom)</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> two basketball courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> four paddle tennis courts</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> swimming pool</p>
+              <p className='ml-3 text-justify text-base mb-2 sm:mb-0 max-w-[500px]'><span className='ml-1 font-bold text-lg'>-</span> restaurant with outside terrace</p>
+
             </div>
           </div>
           <div className='w-full flex flex-col min-h-[400px] gap-4 justify-center items-center px-4 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/facilities/food2.jpeg)' }}>

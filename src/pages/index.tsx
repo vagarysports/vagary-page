@@ -24,11 +24,11 @@ export default function Home() {
           </div>
           <div className="animate-heroContent opacity-0 bg-black bg-opacity-75 absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center flex-col">
             <Image src="/logos/logo-vert.png" alt="" width={250} height={250} />
-            <ScrollDownButton />
+            <ScrollDownButton scrollToId="homeSlide1" />
           </div>
       </section>
 
-      <section>
+      <section id="homeSlide1">
         <div className="w-full min-h-[100vh] bg-primary flex justify-center items-center">
           {/* <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-center mx-4 px-2 xs:px-10 md:px-32 py-10 md:py-20 w-full max-w-[800px] text-white bg-black font-bold text-base leading-6 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
             Vagary Sports Management is a company that specializes in organizing highly personalized soccer tours to Spain for clubs, academies, ODPs, colleges, and universities. With over 20 years of experience living, coaching, playing and representing Athletes in the country, the owners of Vagary Sports Management developed a wealth of knowledge  and personal contacts that they put at the service of clients.

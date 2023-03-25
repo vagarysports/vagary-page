@@ -6,10 +6,10 @@ import { Header } from '@/components/Header'
 const PartnersAndSponsors = () => {
   return (
     <>
-      <Header title='Partners and Sponsorship' bgImage='/images/partners-card.png' description='Vagary Sports Management also has partnerships with the Real Madrid Foundation and Levante UD, which allows teams to access additional top-quality facilities such as the National Team Spanish Federation fields in Las Rozas and the Real Madrid Sports City.' />
+      <Header scrollToId='partnersSlide1' title='Partners and Sponsorship' bgImage='/images/partners-card.png' description='Vagary Sports Management also has partnerships with the Real Madrid Foundation and Levante UD, which allows teams to access additional top-quality facilities such as the National Team Spanish Federation fields in Las Rozas and the Real Madrid Sports City.' />
 
 
-      <div className='bg-[#121618] bg-gradient-to-b from-[#121212] to-[#141414] px-5 md:px-20 py-5 md:py-32'>
+      <div id='partnersSlide1' className='bg-[#121618] bg-gradient-to-b from-[#121212] to-[#141414] px-5 md:px-20 py-5 md:py-32'>
         <p className='text-white text-lg md:text-2xl tracking-wider  text-center'>In addition, the Ebora Formacion Sports City is the headquarters of the Campus Experience and the Social Sports Schools of the Real Madrid Foundation. The company is also in the process of building a new multipurpose building, a space with stands to accommodate the public attending competitions, and a new leisure space to complement the current cafeteria service.</p>
       </div>
 

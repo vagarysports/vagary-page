@@ -8,9 +8,9 @@ import { Header } from '@/components/Header'
 const AboutUs = () => {
   return (
     <>
-      <Header title='About Us' bgImage='/images/about-card.png' description='Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.' />
+      <Header scrollToId='aboutUsSlide1' title='About Us' bgImage='/images/about-card.png' description='Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.' />
 
-      <div className='bg-[#141618] pt-36 py-10 px-5 sm:px-10'>
+      <div id='aboutUsSlide1' className='bg-[#141618] pt-36 py-10 px-5 sm:px-10'>
         <h2 className='text-5xl sm:text-7xl text-white font-bold text-center'>Meet The <br/>Founders</h2>
       </div>
 
