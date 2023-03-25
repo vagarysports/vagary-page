@@ -30,20 +30,23 @@ const VGSMTRAVEL = () => {
       <Header title='VGSM Travel' bgImage='/images/VGSMTRAVEL-card.jpeg'  />
 
     <div className='p-10 py-24 sm:py-36 w-full md:w-[70%] mx-auto'>
-      <p className='text-center md:text-center font-bold md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-800'>Vagary has a network of contacts in the city of Madrid that includes La Liga academies, professional teams and a high selection of Youth tournaments during the course of the year.</p>
+      <p className='text-center md:text-center font-bold md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-800'>Everything we do is how you want it. We simply present a framework and let you fill in the blanks. You will have an experience designed perfectly to get what you want out of it. An experience that is supported by our professional facility, full room and board, and off-time activity options.</p>
     </div>
 
 
-      <div className='flex  text-black flex-col-reverse lg:flex-row w-[97%] lg:w-[90%] bg-gray-100 shadow-md shadow-gray-500 rounded-xl overflow-hidden mx-auto' >
-        <div className='w-full flex  justify-center items-center p-5 py-10 md:py-20 white'>
-          <div className='w-full max-w-[700px]'>
-            <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>The client will have complete freedom to organize the trip as desired. The coaches or managers of the trip can tell us what the objective is and Vagary will adapt around the client´s objective. In addition, we have additional services such as video analysis, technical talks with top tier Spanish coaches…</p>
-            <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>Vagary will take care of the client´s needs from the time they land at Barajas International Airport until they leave for the United States. Our prices include everything, lodging, meals, transportation, sports equipment, etc… The client will only have to take care of the travel insurance and the plane ticket.</p>
-            <p className='text-justify mb-10 text-xl md:text-2xl  font-bold '>We offer our services to youth soccer clubs, college teams and professional teams</p>
+      <div className='flex  text-black flex-col-reverse md:flex-row w-full mx-auto' >
+        <div className='w-full flex justify-center items- p-5 pb-10 md:pb-20 white'>
+          <div className='w-full max-w-[700px] sm:px-4'>
+            <p className='mt-10 md:mt-0 mb-10 text-center md:text-left text-5xl md:text-7xl lg:text-8xl font-bold'>Our Model</p>
+            <p className='text-justify mb-10 text-base md:text-lg lg:leading-9 lg:tracking-wider '>We provide a framework. Everything on top of that is your customization. (Add a model for this.) We realize teams go on overseas trips for various different reasons. Our facility provides a hub for many scenarios.</p>
+            <p className='ml-5 text-justify mb-5  text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> If you`re looking for an isolated training environment to maximize preparation for the upcoming season.</p>
+            <p className='ml-5 text-justify mb-5  text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> If you’re coming to Spain to play academy tournaments, we can provide entry into high-level Spanish summer tournaments. </p>
+            <p className='ml-5 text-justify mb-5  text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> If you want a full Spanish cultural experience in which soccer may not be the priority, we provide transportation and off-time activities for teams. Within close proximity of Madrid and Toledo there is plenty to do outside the facility. </p>
+            <p className='ml-5 text-justify mb-20 text-sm sm:text-base '><span className='ml-5 text-2xl font-bold'>-</span> We provide competitive Spanish opposition for games. We will match the level of teams based on your team’s ability. </p>
+            <p className='text-center mb-5 text-xl md:text-2xl  font-bold '>We offer our services to youth soccer clubs, college teams and professional teams</p> 
           </div>
         </div>
-
-        <div className='w-full flex flex-col gap-4 h-[350px] lg:h-auto justify-center items-center px-4 py-20 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/vgsm-travel-img1.jpeg)' }} ></div>
+        <div className='w-full md:max-w-[400px] lg:max-w-[500px] flex flex-col gap-4 h-[350px] md:h-auto justify-center items-center px-4 py-20 bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/vgsm-travel-img1.jpeg)' }} ></div>
       </div>
 
       <CTA1 />

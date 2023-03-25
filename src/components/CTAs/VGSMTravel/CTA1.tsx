@@ -17,9 +17,9 @@ export const CTA1 = () => {
               </div>
               <div className='flex-1 p-5 md:p-10 md:px-10 '>
                 <h2 className='text-center md:text-justify text-2xl text-gray-900 font-bold mb-10'>Facilities</h2>
-                <p className='text-lg md:text-xl italic text-justify'>Vagary Sports Management also has the exclusive privilege through its collaboration with Ebora Formacion Deportiva, of offering the use of the new sports facilities at Ebora Formacion in Talavera de la Reina. Located just 70 miles from Madrid, these facilities, which were built in 2021, include a residence, restaurant, and two full-size soccer fields. </p>
+                <p className='text-lg md:text-xl italic text-justify'>Vagary Sports Management has the exclusive privilege to partner with Ebora Formacion Deportiva. This brand new facility is located in Talavera de la Reina just 70 miles from Madrid and 45 miles from the historic town of Toledo. These facilities which were built in 2021 include a residence, restaurant, two full-sized soccer fields, pool area, and much more. </p>
                 <div className='w-full flex justify-center mt-20 px-3 md:px-10 '>
-                  <button onClick={()=>{router.push('/facilities')}} className='border border-gray-700 w-full py-2 text-xl text-gray-700 '>Take a Look</button>
+                  <button onClick={()=>{router.push('/facilities')}} className='border bg-gradient-to-b from-[#000] to-[#222]  rounded-md w-full py-2 text-xl text-white font-bold '>Take a Look</button>
                 </div>
               </div>        
           </div>
