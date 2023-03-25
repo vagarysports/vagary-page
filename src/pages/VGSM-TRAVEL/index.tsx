@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { CTA1 } from '@/components/CTAs/VGSMTravel/CTA1'
+import { Header } from '@/components/Header'
 
 const FEATURES = [
   {
@@ -26,18 +27,7 @@ const VGSMTRAVEL = () => {
 
   return (
     <div>
-
-    <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/VGSMTRAVEL-card.jpeg)' }}>
-      <div className='rotate-0 bg-black py-36 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
-        <div className='w-[150px] md:w-[200px] relative min-h-[200px] md:min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
-          <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
-        </div>
-        <div className='w-[1px] h-[300px] bg-white hidden md:block animate-[scaleY_.5s_ease_forwards] origin-center'></div>
-        <div className='animate-[scaleY_.5s_ease_forwards_.5s] opacity-0 origin-top'>
-          <h2 className='text-center md:text-left text-4xl md:text-5xl lg:text-6xl font-bold text-white'>VGSM-TRAVEL</h2>
-        </div>
-      </div>
-    </div>
+      <Header title='VGSM Travel' bgImage='/images/VGSMTRAVEL-card.jpeg'  />
 
     <div className='p-10 py-24 sm:py-36 w-full md:w-[70%] mx-auto'>
       <p className='text-center md:text-center font-bold md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-800'>Vagary has a network of contacts in the city of Madrid that includes La Liga academies, professional teams and a high selection of Youth tournaments during the course of the year.</p>

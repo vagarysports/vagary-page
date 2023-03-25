@@ -30,6 +30,7 @@ module.exports = {
         carouselAutoSlide: 'carouselAutoSlide 60s linear infinite',
         scaleY: 'scaleY 1s linear forwards',
         fadeIn: 'fadeIn 1s linear forwards',
+        scrollDownButton: 'scrollDownButton 2s linear infinite',
       },
       keyframes:{
         heroContent: {
@@ -51,6 +52,12 @@ module.exports = {
         fadeIn: {
           '0%': { opacity:0 },
           '100%': { opacity:1 },
+        },
+        scrollDownButton: {
+          "0%": {opacity:0},
+          "40%": {opacity:1},
+          "80%": {opacity:0},
+          "100%": {opacity:0},
         },
       },
     },

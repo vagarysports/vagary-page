@@ -1,22 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import { CTA1 } from '@/components/CTAs/partnership/CTA1'
+import { Header } from '@/components/Header'
 
 const PartnersAndSponsors = () => {
   return (
     <>
-      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/partners-card.png)' }}>
-        <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
-          <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
-            <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
-          </div>
-          <div className='w-[1px] h-[300px] bg-white hidden md:block animate-[scaleY_.5s_ease_forwards] origin-center'></div>
-          <div className='animate-[scaleY_.5s_ease_forwards_.5s] opacity-0 origin-top'>
-            <h2 className='text-white text-3xl font-bold text-center md:text-left mb-3'>Partners and Sponsors</h2>
-            <p className='tracking-wider max-w-[500px] text-white text-justify px-3 md:text-lg '>Vagary Sports Management also has partnerships with the Real Madrid Foundation and Levante UD, which allows teams to access additional top-quality facilities such as the National Team Spanish Federation fields in Las Rozas and the Real Madrid Sports City.</p>
-          </div>
-        </div>
-      </div>
+      <Header title='Partners and Sponsorship' bgImage='/images/partners-card.png' description='Vagary Sports Management also has partnerships with the Real Madrid Foundation and Levante UD, which allows teams to access additional top-quality facilities such as the National Team Spanish Federation fields in Las Rozas and the Real Madrid Sports City.' />
 
 
       <div className='bg-[#121618] bg-gradient-to-b from-[#121212] to-[#141414] px-5 md:px-20 py-5 md:py-32'>

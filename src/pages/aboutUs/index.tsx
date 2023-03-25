@@ -2,23 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import { CTA1 } from '@/components/CTAs/aboutUs/CTA1'
 import { CTA2 } from '@/components/CTAs/aboutUs/CTA2'
+import { Header } from '@/components/Header'
 
 
 const AboutUs = () => {
   return (
     <>
-      <div className='relative w-full bg-center bg-cover bg-no-repeat bg-fixed' style={{ backgroundImage:'url(/images/about-card.png)' }}>
-        <div className='rotate-0 bg-black py-20 md:py-56 bg-opacity-70 top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row justify-center items-center  gap-5'>
-          <div className='w-[150px] md:w-[200px] relative min-h-[300px] opacity-0 animate-[fadeIn_.5s_ease_forwards_.5s]'>
-            <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/>
-          </div>
-          <div className='w-[1px] h-[300px] bg-white hidden md:block animate-[scaleY_.5s_ease_forwards] origin-center'></div>
-          <div className='animate-[scaleY_.5s_ease_forwards_.5s] opacity-0 origin-top'>
-            <h2 className='text-white text-3xl font-bold text-center md:text-left mb-3'>About Us</h2>
-            <p className='tracking-wider max-w-[500px] text-white text-justify px-3 md:text-lg'>Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.</p>
-          </div>
-        </div>
-      </div>
+      <Header title='About Us' bgImage='/images/about-card.png' description='Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.' />
 
       <div className='bg-[#141618] pt-36 py-10 px-5 sm:px-10'>
         <h2 className='text-5xl sm:text-7xl text-white font-bold text-center'>Meet The <br/>Founders</h2>

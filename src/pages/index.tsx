@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Carousel } from "@/components/Carousel"
 import { HomeCard } from "@/components/HomeCard"
 import { Testimonies } from "@/components/Testimonies"
+import { ScrollDownButton } from "@/components/ScrollDownButton"
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false)
@@ -21,8 +22,9 @@ export default function Home() {
               <source src="/videos/video_shorted.mp4" type="video/mp4" />
             </video>
           </div>
-          <div className="animate-heroContent opacity-0 bg-black bg-opacity-75 absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
+          <div className="animate-heroContent opacity-0 bg-black bg-opacity-75 absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center flex-col">
             <Image src="/logos/logo-vert.png" alt="" width={250} height={250} />
+            <ScrollDownButton />
           </div>
       </section>
 
