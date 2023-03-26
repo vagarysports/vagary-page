@@ -26,14 +26,14 @@ const VGSMTRAVEL = () => {
   const router = useRouter()
 
   return (
-    <div className='bg-[#000]'>
+    <div className='bg-[#121212]'>
       <Header scrollToId='travelSlide1' title='VGSM Travel' bgImage='/images/VGSMTRAVEL-card.jpeg'  />
 
     <div id='travelSlide1' className='p-10 py-80 w-full md:w-[70%] mx-auto'>
       <p className='text-center md:text-center  md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-100'>Everything we do is how you want it. We simply present a framework and let you fill in the blanks. You will have an experience designed perfectly to get what you want out of it. An experience that is supported by our professional facility, full room and board, and off-time activity options.</p>
     </div>
 
-    <div className='bg-[#000] '>
+    <div className='bg-[#121212] '>
         <div style={{ backgroundImage:'url(/images/vgsm-travel-img1.jpeg)', boxShadow:'0px 0px 5px 1px #888' }} className='bg-center bg-cover bg-no-repeat flex bg-white bg-opacity-5 text-white flex-col lg:flex-row w-[92%] mx-auto overflow-hidden rounded-3xl ' >
           
           <div className='w-[100%] flex justify-center p-5 pt-24 md:p-32 md:pb-10 lg:p-20 lg:pb-10 white bg-black bg-opacity-90'>
@@ -70,7 +70,7 @@ const VGSMTRAVEL = () => {
         </p>
     </div>
 
-    <div className='w-[90%] mx-auto h-[1px] mb-56 bg-white'></div>
+    <div className='w-[90%] mx-auto h-[1px] mb-32 bg-white'></div>
 
 
 
