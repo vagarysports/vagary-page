@@ -11,7 +11,7 @@ const Facilities = () => {
   const router = useRouter()
 
   return (
-    <div className='pt-10'>
+    <div className='pt-10 bg-[#eee]'>
         <Head>
           <title>Vagary Sports Facilities</title>
         </Head>

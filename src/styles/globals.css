@@ -23,6 +23,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: #eee;
+}
+
   /* width */
 ::-webkit-scrollbar {
   width: 2px;

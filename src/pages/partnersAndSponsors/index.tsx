@@ -29,7 +29,7 @@ const PartnersAndSponsors = () => {
       </div>
 
 
-      <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center bg-[#eee] '>
         <div className='flex flex-col md:flex-row-reverse justify-center items-center shadow-sm shadow-gray-400 my-80 overflow-hidden rounded-3xl  w-[90%]'>
         <div className='flex-1 w-full relative rounded-r-3xl overflow-hidden bg-center' >
         <div className='w-full bg-orange-50 relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/partners3.jpeg)' }}></div>

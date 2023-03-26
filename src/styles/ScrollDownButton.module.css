@@ -13,10 +13,10 @@
   
   @keyframes arrow
   {
-  0% {opacity:0}
+  0% {opacity:0.4}
   40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  80% {opacity:0.4}
+  100% {opacity:0.4}
   }
   
   @-webkit-keyframes arrow /*Safari and Chrome*/

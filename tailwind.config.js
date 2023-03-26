@@ -31,7 +31,7 @@ module.exports = {
         scaleY: 'scaleY 1s linear forwards',
         fadeIn: 'fadeIn 1s linear forwards',
         scrollDownButton: 'scrollDownButton 2s linear infinite',
-        bounce2: 'bounce2 3s linear infinite',
+        bounce2: 'bounce2 6s linear infinite',
       },
       keyframes:{
         heroContent: {
@@ -55,16 +55,16 @@ module.exports = {
           '100%': { opacity:1 },
         },
         scrollDownButton: {
-          "0%": {opacity:0},
+          "0%": {opacity:0.4},
           "40%": {opacity:1},
-          "80%": {opacity:0},
-          "100%": {opacity:0},
+          "80%": {opacity:0.4},
+          "100%": {opacity:0.4},
         },
         bounce2: {
           "0%": {transform:'translateY(0)'},
-          "10%": {transform:'translateY(-5px)'},
+          "10%": {transform:'translateY(-2px)'},
           "20%": {transform:'translateY(0)'},
-          "30%": {transform:'translateY(-5px)'},
+          "30%": {transform:'translateY(-2px)'},
           "40%": {transform:'translateY(0)'},
           "100%": {transform:'translateY(0)'}
         },

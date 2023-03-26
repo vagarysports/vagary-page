@@ -8,17 +8,17 @@ import { Header } from '@/components/Header'
 
 const AboutUs = () => {
   return (
-    <>
+    <div className='bg-[#eee]'>
       <Head>
         <title>Vagary Sports About Us</title>
       </Head>
       <Header scrollToId='aboutUsSlide1' title='About Us' bgImage='/images/about-card.png' description='Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.' />
 
-      <div id='aboutUsSlide1' className='bg-[#141618] pt-36 py-10 px-5 sm:px-10'>
+      <div id='aboutUsSlide1' className='bg-gradient-to-r from-[#000] to-[#222] pt-36 py-10 px-5 sm:px-10'>
         <h2 className='text-5xl sm:text-7xl text-white font-bold text-center'>Meet The <br/>Founders</h2>
       </div>
 
-      <div className='bg-[#141618] flex flex-col md:flex-row-reverse justify-center items-center py-20 lg:px-20'>
+      <div className='bg-gradient-to-r from-[#000] to-[#222] flex flex-col md:flex-row-reverse justify-center items-center py-20 lg:px-20'>
           <div className='flex-1 '>
             <div className='w-full relative min-h-[500px] min-w-[300px]'>
               <Image alt="" src="/images/mike.jpg" fill style={{ objectFit:'cover', objectPosition:'top center' }}/>
@@ -60,14 +60,14 @@ const AboutUs = () => {
             {/* <p className='text-sm italic text-white'>Daniel Receiving X awward of X cup</p> */}
       </div>
 
-      <section className='px-0 lg:px-20'>
+      <section className='px-0 lg:px-20 bg-[#eee]'>
         <div className='flex justify-center items-center gap-10 p-10'>
               <div className='w-full relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/vagary-beginnings.png)' }}></div>
               <div className='w-full hidden md:block relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/aboutUs3.jpg)' }}></div>
         </div>
 
         <div className='flex-1 p-5 md:p-10 md:px-10'>
-          <p className='text-justify sm:text-center text-xl lg:text-2xl text-[#726d6d] font-bold mb-10'>With more than 20+ years of experience playing soccer in Madrid, we have a vast network in the city with clubs such as Real Madrid, Atletico de Madrid, Leganes, Alcorcon, Rayo Vallecano, etc…</p>
+          <p className='text-justify sm:text-center text-xl lg:text-2xl text-[#353333] font-bold mb-10'>With more than 20+ years of experience playing soccer in Madrid, we have a vast network in the city with clubs such as Real Madrid, Atletico de Madrid, Leganes, Alcorcon, Rayo Vallecano, etc…</p>
           <p className='text-justify text-base lg:text-xl text-[#555] '>We also have a global presence with projects in Argentina, Spain, USA and Germany. We work closely with JJ Sport Management where we acquired extensive experience assisting high value LaLiga-Premier League transfers. We have actively collaborated with JJ Sport Management in recent years advising on sports, marketing, sponsorship of their athletes based in the main European Soccer Leagues.</p>
         </div>        
         
@@ -75,10 +75,10 @@ const AboutUs = () => {
               <div className='w-full md:hidden block relative min-h-[300px] min-w-[300px] md:min-h-[500px] bg-center bg-cover bg-no-repeat' style={{ backgroundImage:'url(/images/aboutUs3.jpg)' }}></div>
         </div>
       </section>
-
+    
       <CTA2 />
      
-    </>
+    </div>
   )
 }
 
