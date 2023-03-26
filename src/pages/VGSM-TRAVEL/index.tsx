@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { CTA1 } from '@/components/CTAs/VGSMTravel/CTA1'
 import { Header } from '@/components/Header'
+import { OurModelSection } from '@/sections/VGSMTravel/OurModelSection'
 // import styles from '../../styles/vgsm.module.css'
 
 const FEATURES = [
@@ -25,9 +27,14 @@ const FEATURES = [
 
 const VGSMTRAVEL = () => {
   const router = useRouter()
+  const [windowWidth, setWindowWidth] = useState(0)
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth)
+  }, [])
 
   return (
-    <div className='bg-[#121212]'>
+    <div className='bg-gradient-to-r from-[#000] to-[#222]'>
       <Head>
         <title>Vagary Sports Travel</title>
       </Head>
@@ -37,51 +44,23 @@ const VGSMTRAVEL = () => {
       <p className='text-center md:text-center  md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-100'>Everything we do is how you want it. We simply present a framework and let you fill in the blanks. You will have an experience designed perfectly to get what you want out of it. An experience that is supported by our professional facility, full room and board, and off-time activity options.</p>
     </div>
 
-    <div className='bg-[#121212] '>
-        <div style={{ backgroundImage:'url(/images/vgsm-travel-img1.jpeg)', boxShadow:'0px 0px 5px 1px #888' }} className='bg-center bg-cover bg-no-repeat flex bg-white bg-opacity-5 text-white flex-col lg:flex-row w-[92%] mx-auto overflow-hidden rounded-3xl ' >
-          
-          <div className='w-[100%] flex justify-center p-5 pt-24 md:p-32 md:pb-10 lg:p-20 lg:pb-10 white bg-black bg-opacity-90'>
-            <div className='w-full flex items-center justify-center '>
-              <div className=''>
-                <p className=' mb-10 text-center text-3xl md:text-5xl font-bold'>OUR MODEL</p>
-                <p className='text-justify mb-5 text-base md:text-lg'><span className='text-transparent'>s</span> We provide a <span className='font-bold'>framework.</span> Everything on top of that is your <span className='font-bold'>customization.</span> We realize teams go on <span className='font-bold'>overseas trips</span> for various different reasons. Our facility provides a hub for many scenarios.</p>
-              </div>
-            </div>
-          </div>
+    <OurModelSection />
+      
+    <CTA1 />
 
-          <div className='w-[100%] flex justify-center  p-5 pb-10 white bg-black bg-opacity-90 '>
-            <div className='w-full max-w-[700px] flex items-center'>
-              <div className='w-full grid grid-cols-1 gap-5 mt-20 justify-items-center'>
-                <p className='text-justify font-thin mb-1 w-full sm:w-[75%] border-l border-white text-base tracking-wide leading-7  sm:text-base  px-8 py-1 '> 
-                  You`re looking for an isolated training environment to maximize preparation for the upcoming season.
-                </p>
-                <p className='text-justify font-thin mb-1 w-full sm:w-[75%] border-l border-white text-base tracking-wide leading-7  sm:text-base  px-8 py-1 '>
-                  You’re coming to Spain to play academy tournaments, we can provide entry into high-level Spanish summer tournaments. 
-                </p>
-                <p className='text-justify font-thin mb-1 w-full sm:w-[75%] border-l border-white text-base tracking-wide leading-7  sm:text-base  px-8 py-1 '>
-                  You want a full Spanish cultural experience in which soccer may not be the priority, we provide transportation and off-time activities for teams. Within close proximity of Madrid and Toledo there is plenty to do outside the facility. 
-                </p>
-                <p className='mb-10 text-justify font-thin w-full sm:w-[75%] border-l border-white text-base tracking-wide leading-7  sm:text-base  px-8 py-1 '>
-                  We provide competitive Spanish opposition for games. We will match the level of teams based on your team’s ability. 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className='w-[90%] mx-auto h-[1px] mb-28 bg-white'></div>
 
-        <p className='text-2xl text-center text-white font-bold w-[80%] mx-auto my-32'>
-          We offer our services to youth soccer clubs, college teams and professional teams
-        </p>
+    <div className='bg-gradient-to-r from-[#000] to-[#222] py-20 flex flex-col gap-10 justify-center items-center px-5'>
+      <p className=' mb-10 text-white text-center text-3xl font-bold'>WHAT A WEEK COULD LOOK LIKE</p>
+      <div className='shadow-md shadow-[#888] inline-block w-full max-w-[1000px]  min-h-[442px] mx-auto relative overflow-x-scroll ' >
+        <Image src={'/images/Schedule.png'} alt="" width={1000} height={442} style={{ minWidth:'1000px' }} />
+        {/* <Image alt="" src="/logos/logo-vert.png" fill style={{ objectFit:'contain' }}/> */}
+      </div>
     </div>
-
-    <div className='w-[90%] mx-auto h-[1px] mb-32 bg-white'></div>
-
-
-
-      <CTA1 />
 
     </div>
   )
 }
+
 
 export default VGSMTRAVEL
