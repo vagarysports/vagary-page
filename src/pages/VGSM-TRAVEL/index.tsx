@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { CTA1 } from '@/components/CTAs/VGSMTravel/CTA1'
 import { Header } from '@/components/Header'
@@ -27,6 +28,9 @@ const VGSMTRAVEL = () => {
 
   return (
     <div className='bg-[#121212]'>
+      <Head>
+        <title>Vagary Sports Travel</title>
+      </Head>
       <Header scrollToId='travelSlide1' title='VGSM Travel' bgImage='/images/VGSMTRAVEL-card.jpeg'  />
 
     <div id='travelSlide1' className='p-10 py-80 w-full md:w-[70%] mx-auto'>

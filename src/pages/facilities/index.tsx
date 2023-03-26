@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import { FacilitiesSlider } from '@/components/facilitiesSlider';
 import { CTA1 } from '@/components/CTAs/facilities/CTA1';
@@ -11,6 +12,9 @@ const Facilities = () => {
 
   return (
     <div className='pt-10'>
+        <Head>
+          <title>Vagary Sports Facilities</title>
+        </Head>
         <Header title='Facilities' bgImage='/images/facilities/field1.png' scrollToId='facilitiesSlide1' />
 
         <div id='facilitiesSlide1' className='bg-gray-100 flex py-0 flex-col mx-auto my-20 lg:flex-row w-[95%] lg:w-[90%] rounded-3xl overflow-hidden shadow-gray-400 shadow-md'>

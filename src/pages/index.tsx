@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Head from "next/head"
 import Image from "next/image"
 import { Carousel } from "@/components/Carousel"
 import { HomeCard } from "@/components/HomeCard"
@@ -16,6 +17,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Vagary Sports</title>
+      </Head>
       <section className="bg-black min-h-screen w-full relative">
           <div className="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <video className="absolute w-screen h-screen object-cover" id="background-video" autoPlay={true} loop muted >

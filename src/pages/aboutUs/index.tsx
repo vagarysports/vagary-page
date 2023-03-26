@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import { CTA1 } from '@/components/CTAs/aboutUs/CTA1'
 import { CTA2 } from '@/components/CTAs/aboutUs/CTA2'
@@ -8,6 +9,9 @@ import { Header } from '@/components/Header'
 const AboutUs = () => {
   return (
     <>
+      <Head>
+        <title>Vagary Sports About Us</title>
+      </Head>
       <Header scrollToId='aboutUsSlide1' title='About Us' bgImage='/images/about-card.png' description='Vagary Global Sports Management is a Sports Management Agency based in Charlotte, NC and Madrid, Spain. Vagary was born while Daniel and Michael were Juniors in college, ever since, Daniel and Michael started working together towards the future and started building relationships.' />
 
       <div id='aboutUsSlide1' className='bg-[#141618] pt-36 py-10 px-5 sm:px-10'>

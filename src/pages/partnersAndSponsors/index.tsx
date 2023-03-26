@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import { CTA1 } from '@/components/CTAs/partnership/CTA1'
 import { Header } from '@/components/Header'
@@ -6,6 +7,9 @@ import { Header } from '@/components/Header'
 const PartnersAndSponsors = () => {
   return (
     <>
+      <Head>
+        <title>Vagary Sports Partners</title>
+      </Head>
       <Header scrollToId='partnersSlide1' title='Partners and Sponsorship' bgImage='/images/partners-card.png' description='Vagary Sports Management also has partnerships with the Real Madrid Foundation and Levante UD, which allows teams to access additional top-quality facilities such as the National Team Spanish Federation fields in Las Rozas and the Real Madrid Sports City.' />
 
 
