@@ -54,7 +54,7 @@ export const OurModelSection = () => {
         <div className="relative z-10 container mx-auto px-4">
             
             <div className="mb-16 max-w-xl">
-            <h2 className="mb-6 font-heading font-semibold text-white text-6xl sm:text-7xl">OUR MODEL</h2>
+            <h2 className="mb-6 font-heading font-semibold text-white text-6xl sm:text-7xl">Our Model</h2>
             <p className="text-gray-200 text-lg">We provide a&nbsp;framework.&nbsp;Everything on top of that is your&nbsp;customization.&nbsp;We realize teams go on&nbsp;overseas trips&nbsp;for various different reasons. Our facility provides a hub for many scenarios.</p>
             </div>
 
