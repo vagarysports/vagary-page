@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cards = [
     { image:'/images/VGSMTravel/carousel2.jpeg', text:'You`re looking for an isolated training environment to maximize preparation for the upcoming season.' },
-    { image:'/images/VGSMTravel/carousel1.jpeg', text:'You’re coming to Spain to play academy tournaments, we can provide entry into high-level Spanish summer tournaments.' },
+    { image:'/images/VGSMTravel/carousel1.jpeg', text:'You`re coming to Spain to play academy tournaments, we can provide entry into high-level Spanish summer tournaments.' },
     { image:'/images/VGSMTravel/carousel3.jpeg', text:"You want a full Spanish cultural experience in which soccer may not be the priority, we provide transportation and off-time activities for teams. Within close proximity of Madrid and Toledo there is plenty to do outside the facility." },
     { image:'/images/VGSMTravel/carousel4.jpeg', text:"We provide competitive Spanish opposition for games. We will match the level of teams based on your team’s ability." },
 ]
