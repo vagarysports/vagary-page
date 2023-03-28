@@ -93,7 +93,7 @@ const Facilities = () => {
               <h2 className='text-center text-3xl font-bold mb-10'>Ciudad Deportiva Ebora Formación</h2>
               <p className='text-center text-xl mb-10'>Polígono Sector VI, 45683 Cazalegas, Toledo, Spain</p>
               <div className='w-full flex justify-center'>
-                <button className='border px-5 py-2 text-xl text-white rounded-lg bg-black'>See Google Maps</button>
+                <button onClick={()=>window.open('https://www.google.com/maps?ll=39.976517,-4.747065&z=15&t=m&hl=es&gl=VE&mapclient=embed&cid=2410945507851160869', '_blank')} className='border px-5 py-2 text-xl text-white rounded-lg bg-black'>See Google Maps</button>
               </div>
             </div>
 
