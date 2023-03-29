@@ -2,9 +2,9 @@ import React from 'react'
 
 const Cards = [
     { image:'/images/VGSMTravel/carousel2.jpeg', text:'You`re looking for an isolated training environment to maximize preparation for the upcoming season.' },
-    { image:'/images/VGSMTravel/carousel1.jpeg', text:'You`re coming to Spain to play academy tournaments, we can provide entry into high-level Spanish summer tournaments.' },
-    { image:'/images/VGSMTravel/carousel3.jpeg', text:"You want a full Spanish cultural experience in which soccer may not be the priority, we provide transportation and off-time activities for teams. Within close proximity of Madrid and Toledo there is plenty to do outside the facility." },
-    { image:'/images/VGSMTravel/carousel4.jpeg', text:"We provide competitive Spanish opposition for games. We will match the level of teams based on your team’s ability." },
+    { image:'/images/VGSMTravel/carousel1.jpeg', text:'You`re coming to Spain to play academy tournaments. If so, we can provide entry into high-level summer tournaments while providing you with full access to our facilities.' },
+    { image:'/images/VGSMTravel/carousel3.jpeg', text:'You want a full Spanish cultural experience. Our close proximity to both Toledo and Madrid provides many possibilities for off-time activities. You can experience Spanish culture, professional soccer games and historical sites during the course of your trip.' },
+    { image:'/images/VGSMTravel/carousel4.jpeg', text:'You want to challenge your team with competitive Spanish opposition. Our network of local clubs in the area of Madrid allows us to provide the level of competition you are looking for.' },
 ]
 
 export const OurModelSection = () => {
@@ -15,7 +15,9 @@ export const OurModelSection = () => {
             
             <div className="mb-16 w-full">
                 <h2 className="text-center w-full mb-6 font-heading font-semibold text-white text-6xl sm:text-7xl">Our Model</h2>
-                <p className="text-justify max-w-[500px] mt-10 mx-auto text-gray-200 text-lg">We provide a framework. Everything on top of that is your&nbsp;customization.&nbsp;We realize teams go on&nbsp;overseas trips&nbsp;for various different reasons. Our facility provides a hub for many scenarios.</p>
+                <p className="text-justify max-w-[500px] mt-10 mx-auto text-gray-200 text-lg">
+                    We realize teams go on overseas trips for various different reasons. Our facility provides a hub for many scenarios as can be seen below:
+                </p>
             </div>
 
             <div className={`grid grid-cols-1 md:grid-cols-2 justify-items-center max-w-[1100px] mx-auto align mb-0 transition-all`} >

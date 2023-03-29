@@ -38,11 +38,11 @@ export default function Home() {
             Vagary Sports Management is a company that specializes in organizing highly personalized soccer tours to Spain for clubs, academies, ODPs, colleges, and universities. With over 20 years of experience living, coaching, playing and representing Athletes in the country, the owners of Vagary Sports Management developed a wealth of knowledge  and personal contacts that they put at the service of clients.
           </div> */}
           <div style={{ backgroundImage: 'url(/images/featured-home-bg.png' }} className="shadow-lg shadow-[#000000] bg-center bg-cover bg-no-repeat text-justify xs:text-center mx-4 px-2 xs:px-10 md:px-28 py-10 md:py-32 w-full max-w-[800px] text-white bg-black font-bold text-base leading-7 tracking-wide md:text-xl md:leading-9 md:tracking-wider">
-              <p className="mb-7 md:mb-0">We specialize in maximizing your experience.</p>
+              <p className="mb-7 md:mb-0">We specialize in high-quality soccer trips.</p>
               <p className="mb-7 md:mb-0">Professionalism in everything we do.</p>            
-              <p className="mb-7 md:mb-0">Your plans are at the center of our service.</p>            
-              <p className="mb-7 md:mb-0">Our network, our facilities, your customization. </p>            
-              <p className="mb-7 md:mb-0">We provide the framework. You design your trip.</p>            
+              <p className="mb-7 md:mb-0">We design the perfect trip specifically for your needs.</p>            
+              <p className="mb-7 md:mb-0">We provide the framework. Everything else is customizable by you.</p>            
+              <p className="mb-7 md:mb-0">What can we do for you?</p>  
           </div>
         </div>
       </section>

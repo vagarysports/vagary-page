@@ -41,7 +41,9 @@ const VGSMTRAVEL = () => {
       <Header scrollToId='travelSlide1' title='VGSM Travel' bgImage='/images/VGSMTRAVEL-card.jpeg'  />
 
     <div id='travelSlide1' className='p-10 py-80 w-full md:w-[70%] mx-auto'>
-      <p className='text-center md:text-center  md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-100'>Everything we do is how you want it. We simply present a framework and let you fill in the blanks. You will have an experience designed perfectly to get what you want out of it. An experience that is supported by our professional facility, full room and board, and off-time activity options.</p>
+      <p className='text-center md:text-center  md:tracking-wider md:leading-10 text-lg sm:text-2xl text-gray-100'>
+        How your trip is structured is your decision. We simply provide a framework and let you fill in the blanks. You will have an experience that surpasses your expectations. An experience which is supported by our professional staff, high-end facility, room and board, and off-time activity options.
+      </p>
     </div>
 
     <OurModelSection />
