@@ -26,7 +26,7 @@ module.exports = {
     },
     extend: {
       animation: {
-        heroContent: 'heroContent 2s linear forwards 4s',
+        heroContent: 'heroContent 2s linear forwards 2s',
         carouselAutoSlide: 'carouselAutoSlide 60s linear infinite',
         scaleY: 'scaleY 1s linear forwards',
         fadeIn: 'fadeIn 1s linear forwards',

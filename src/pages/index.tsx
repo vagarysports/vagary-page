@@ -22,8 +22,11 @@ export default function Home() {
       </Head>
       <section className="bg-black min-h-screen w-full relative">
           <div className="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <video className="absolute w-screen h-screen object-cover" id="background-video" autoPlay={true} loop muted >
+            {/* <video className="hidden md:block absolute w-screen h-screen object-cover" id="background-video" autoPlay={true} loop muted >
               <source src="/videos/video_shorted.mp4" type="video/mp4" />
+            </video> */}
+            <video className=" absolute w-screen h-screen object-cover" id="background-video" autoPlay={true} loop muted >
+              <source src="/videos/video_shorted_mobile (1).mp4" type="video/mp4" />
             </video>
           </div>
           <div className="animate-heroContent opacity-0 bg-black bg-opacity-75 absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center flex-col">
