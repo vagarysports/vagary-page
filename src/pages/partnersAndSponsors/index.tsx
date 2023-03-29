@@ -10,7 +10,7 @@ const PartnersAndSponsors = () => {
       <Head>
         <title>Vagary Sports Partners</title>
       </Head>
-      <Header scrollToId='partnersSlide1' title='Partners and Sponsorship' bgImage='/images/partners-card.png' description='Vagary Sports Management also has partnerships with the Real Madrid Foundation and Levante UD, which allows teams to access additional top-quality facilities such as the National Team Spanish Federation fields in Las Rozas and the Real Madrid Sports City.' />
+      <Header scrollToId='partnersSlide1' title='Partners and Sponsorship' bgImage='/images/VGSMTravel/carousel3.jpeg' description='Vagary Sports Management also has partnerships with the Real Madrid Foundation and Levante UD, which allows teams to access additional top-quality facilities such as the National Team Spanish Federation fields in Las Rozas and the Real Madrid Sports City.' />
 
 
       <div id='partnersSlide1' className='bg-[#121212] px-5 md:px-20 py-56'>

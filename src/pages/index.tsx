@@ -52,7 +52,7 @@ export default function Home() {
 
       <section>
         <div className="w-full bg-primary flex flex-col items-center justify-start px-2 pb-48 pt-20">
-          <h3 className="w-full text-center font-bold text-2xl text-white mb-10">clubs we have worked with</h3>
+          <h3 className="w-full text-center font-bold text-2xl text-white mb-10">Clubs We Have Worked With</h3>
           <Carousel />
         </div>
       </section>
